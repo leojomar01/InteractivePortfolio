@@ -38,10 +38,10 @@ html {
   transform: scaleX(1);
 }
 .avatar .idle {
-  background-image: url("../images/cat.gif");
+  background-image: url("images/cat.gif");
 }
 .avatar .walking {
-  background-image: url("../images/walkingCat.gif");
+  background-image: url("images/walkingCat.gif");
 }
 
 .nightModeSwitch {
@@ -95,7 +95,7 @@ html {
   width: 2000vw;
 }
 .container .building1 {
-  background-image: url("../images/building1.png");
+  background-image: url("images/building1.png");
   background-size: auto 50vh;
   top: 30vh;
   height: 50vh;
@@ -105,7 +105,7 @@ html {
   display: none;
 }
 .container .building2 {
-  background-image: url("../images/building2.png");
+  background-image: url("images/building2.png");
   background-size: auto 50vh;
   top: 30vh;
   height: 50vh;
@@ -115,7 +115,7 @@ html {
   display: none;
 }
 .container .building3 {
-  background-image: url("../images/building3.png");
+  background-image: url("images/building3.png");
   background-size: auto 50vh;
   top: 30vh;
   height: 50vh;
@@ -125,7 +125,7 @@ html {
   display: none;
 }
 .container .path {
-  background-image: url("../images/path.png");
+  background-image: url("images/path.png");
   background-size: auto 20vh;
   top: 80vh;
   height: 20vh;
@@ -143,10 +143,10 @@ html {
   display: none;
 }
 .container .bgMorning {
-  background-image: url("../images/bgMorning.png");
+  background-image: url("images/bgMorning.png");
 }
 .container .bgNight {
-  background-image: url("../images/bgNight.png");
+  background-image: url("images/bgNight.png");
 }
 .container .cloud {
   background-size: auto 30vh;
@@ -161,8 +161,8 @@ html {
   display: none;
 }
 .container .cloudMorning {
-  background-image: url("../images/cloudMorning.png");
+  background-image: url("images/cloudMorning.png");
 }
 .container .cloudNight {
-  background-image: url("../images/cloudNight.png");
+  background-image: url("images/cloudNight.png");
 }/*# sourceMappingURL=index.css.map */
