@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html{
+        overflow-x: hidden;
+    }
+.sticky-parent, .sky-parent{
+    height: 10000vh;
+}
+.sky-parent{
+    position: absolute;
+    top: 0;
+}
+.dim{
+  min-width: 5000vw;
+  height: 100vh;
+}
+.sky,.building1{
+    position: sticky;
+    width: 100vw;
+    overflow: scroll;
+    background-image: url('/images/bgNight2.png');
+    background-repeat: repeat-x;
+    background-attachment: local;
+}
+.building1{
+    background-image: url('/images/building1.png');
+    background-size: auto 50vh;
+    top: 30vh;
+    height: 50vh;
+}
+.sky{
+    background-image: url('/images/bgNight2.png');
+    background-size: auto 80vh;
+    height: 80vh;
+    top: 0vh;
+}
+
+.building1::-webkit-scrollbar, .sky::-webkit-scrollbar{
+    display: none;
+}
+.sky .content, .building1 .content{
+    width: 2000vw;
+}
+</style>
+<body>
+        <div class="sticky-parent">
+          <div class="sticky">
+              <div class="dim" ></div>
+          </div>
+        </div>
+        
+        <div class="sky-parent">
+            <div class="sky">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="sky-parent">
+            <div class="building1">
+                <div class="content"></div>
+            </div>
+        </div>
+</body>
+
+<script>
+
+// Adding scroll event listener
+document.addEventListener('scroll', function horizontalScroll(){
+
+//Checking whether the sticky element has entered into view or not
+let stickyPosition = sticky.getBoundingClientRect().top;
+    let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+    sky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*.1;
+    building1.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*.2;
+});
+
+window.onscroll = function(e) {
+  if(this.oldScroll < this.scrollY){
+    console.log("right");
+  }
+  else{
+    console.log("left");
+  }
+  this.oldScroll = this.scrollY;
+}
+
+//Selecting Elements
+let sticky = document.querySelector('.sticky');
+let sky = document.querySelector('.sky');
+let building1 = document.querySelector('.building1');
+let stickyParent = document.querySelector('.sticky-parent');
+
+let scrollWidth = sticky.scrollWidth;
+let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+console.log(scrollWidth);
+console.log(verticalScrollHeight);
+
+</script>
+</html>

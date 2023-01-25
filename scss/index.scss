@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+}
+//prevent background scrolling when clicked
+.cover{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.avatar{
+    position: fixed;
+    top:62vh;
+    left: 20vw;
+    
+    width: 20vh;
+    height: 20vh;
+    z-index: 999;
+    
+    .model{
+        background-size: auto 20vh;
+        background-repeat: repeat-x;
+        background-attachment: local;
+        width: 20vh;
+        height: 20vh;
+    }
+    .left{
+        transform: scaleX(-1);
+    }
+    .right{
+        transform: scaleX(1);
+    }
+    .idle{
+        background-image: url('/images/cat.gif');
+    }
+    .walking{
+        background-image: url('/images/walkingCat.gif');
+    }
+}
+
+.nightModeSwitch{
+    position: fixed;
+    top: 10vh;
+    margin-left: 20vh;
+    z-index: 100;
+    width: 6rem;
+    height: 6rem;
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+.nightMode{
+    position: fixed;
+    top: 10vh;
+    left: 20vh;
+    font-size: 5rem;
+    z-index: 4;
+
+    
+    .sun{
+        color: yellow;
+    }
+    .moon{
+        color: aliceblue;
+    }
+}
+
+// scrollbar 
+.sticky-parent{
+    height: 10000vh;
+
+
+    .dim{
+        min-width: 5000vw;
+        height: 120vh;
+        }
+}
+
+//background
+.container{
+    position: absolute;
+    top: 0;
+    height: 10100vh;
+
+    .sky,.building1,.building2,.building3,.cloud,.path{
+        position: sticky;
+        width: 100vw;
+        overflow: scroll;
+        background-repeat: repeat-x;
+        background-attachment: local;
+
+        .content{
+            width: 2000vw;
+        }
+    }
+
+    .building1{
+        background-image: url('/images/building1.png');
+        background-size: auto 50vh;
+        top: 30vh;
+        height: 50vh;
+        z-index: 4;
+
+
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .building2{
+        background-image: url('/images/building2.png');
+        background-size: auto 50vh;
+        top: 30vh;
+        height: 50vh;
+        z-index: 3;
+
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .building3{
+        background-image: url('/images/building3.png');
+        background-size: auto 50vh;
+        top: 30vh;
+        height: 50vh;
+        z-index: 2;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    .path{
+        background-image: url('/images/path.png');
+        background-size: auto 20vh;
+        top: 80vh;
+        height: 20vh;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+
+    //Sky css
+    .sky{
+        background-size: auto 80vh;
+        height: 80vh;
+        top: 0vh;
+        z-index: 1;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .bgMorning{
+        background-image: url('/images/bgMorning.png');
+    }
+    .bgNight{
+        background-image: url('/images/bgNight.png');
+    }
+
+
+
+
+    //CLOUD css
+    .cloud{
+        background-size: auto 30vh;
+        height: 30vh;
+        top: 0vh;
+        z-index: 5;
+        .content{
+            width: 20000vw;
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .cloudMorning{
+        background-image: url('/images/cloudMorning.png');
+    }
+    .cloudNight{
+        background-image: url('/images/cloudNight.png');
+    }
+}
+

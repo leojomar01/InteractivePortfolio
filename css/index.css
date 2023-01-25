@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.avatar {
+  position: fixed;
+  top: 62vh;
+  left: 20vw;
+  width: 20vh;
+  height: 20vh;
+  z-index: 999;
+}
+.avatar .model {
+  background-size: auto 20vh;
+  background-repeat: repeat-x;
+  background-attachment: local;
+  width: 20vh;
+  height: 20vh;
+}
+.avatar .left {
+  transform: scaleX(-1);
+}
+.avatar .right {
+  transform: scaleX(1);
+}
+.avatar .idle {
+  background-image: url("/images/cat.gif");
+}
+.avatar .walking {
+  background-image: url("/images/walkingCat.gif");
+}
+
+.nightModeSwitch {
+  position: fixed;
+  top: 10vh;
+  margin-left: 20vh;
+  z-index: 100;
+  width: 6rem;
+  height: 6rem;
+}
+.nightModeSwitch:hover {
+  cursor: pointer;
+}
+
+.nightMode {
+  position: fixed;
+  top: 10vh;
+  left: 20vh;
+  font-size: 5rem;
+  z-index: 4;
+}
+.nightMode .sun {
+  color: yellow;
+}
+.nightMode .moon {
+  color: aliceblue;
+}
+
+.sticky-parent {
+  height: 10000vh;
+}
+.sticky-parent .dim {
+  min-width: 5000vw;
+  height: 120vh;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  height: 10100vh;
+}
+.container .sky, .container .building1, .container .building2, .container .building3, .container .cloud, .container .path {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100vw;
+  overflow: scroll;
+  background-repeat: repeat-x;
+  background-attachment: local;
+}
+.container .sky .content, .container .building1 .content, .container .building2 .content, .container .building3 .content, .container .cloud .content, .container .path .content {
+  width: 2000vw;
+}
+.container .building1 {
+  background-image: url("/images/building1.png");
+  background-size: auto 50vh;
+  top: 30vh;
+  height: 50vh;
+  z-index: 4;
+}
+.container .building1::-webkit-scrollbar {
+  display: none;
+}
+.container .building2 {
+  background-image: url("/images/building2.png");
+  background-size: auto 50vh;
+  top: 30vh;
+  height: 50vh;
+  z-index: 3;
+}
+.container .building2::-webkit-scrollbar {
+  display: none;
+}
+.container .building3 {
+  background-image: url("/images/building3.png");
+  background-size: auto 50vh;
+  top: 30vh;
+  height: 50vh;
+  z-index: 2;
+}
+.container .building3::-webkit-scrollbar {
+  display: none;
+}
+.container .path {
+  background-image: url("/images/path.png");
+  background-size: auto 20vh;
+  top: 80vh;
+  height: 20vh;
+}
+.container .path::-webkit-scrollbar {
+  display: none;
+}
+.container .sky {
+  background-size: auto 80vh;
+  height: 80vh;
+  top: 0vh;
+  z-index: 1;
+}
+.container .sky::-webkit-scrollbar {
+  display: none;
+}
+.container .bgMorning {
+  background-image: url("/images/bgMorning.png");
+}
+.container .bgNight {
+  background-image: url("/images/bgNight.png");
+}
+.container .cloud {
+  background-size: auto 30vh;
+  height: 30vh;
+  top: 0vh;
+  z-index: 5;
+}
+.container .cloud .content {
+  width: 20000vw;
+}
+.container .cloud::-webkit-scrollbar {
+  display: none;
+}
+.container .cloudMorning {
+  background-image: url("/images/cloudMorning.png");
+}
+.container .cloudNight {
+  background-image: url("/images/cloudNight.png");
+}/*# sourceMappingURL=index.css.map */
