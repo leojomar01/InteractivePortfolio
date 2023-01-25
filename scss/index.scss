@@ -38,10 +38,10 @@ html{
         transform: scaleX(1);
     }
     .idle{
-        background-image: url('images/cat.gif');
+        background-image: url('../images/cat.gif');
     }
     .walking{
-        background-image: url('images/walkingCat.gif');
+        background-image: url('../images/walkingCat.gif');
     }
 }
 
@@ -103,7 +103,7 @@ html{
     }
 
     .building1{
-        background-image: url('images/building1.png');
+        background-image: url('../images/building1.png');
         background-size: auto 50vh;
         top: 30vh;
         height: 50vh;
@@ -116,7 +116,7 @@ html{
         }
     }
     .building2{
-        background-image: url('images/building2.png');
+        background-image: url('../images/building2.png');
         background-size: auto 50vh;
         top: 30vh;
         height: 50vh;
@@ -128,7 +128,7 @@ html{
         }
     }
     .building3{
-        background-image: url('images/building3.png');
+        background-image: url('../images/building3.png');
         background-size: auto 50vh;
         top: 30vh;
         height: 50vh;
@@ -140,7 +140,7 @@ html{
     }
 
     .path{
-        background-image: url('images/path.png');
+        background-image: url('../images/path.png');
         background-size: auto 20vh;
         top: 80vh;
         height: 20vh;
@@ -162,10 +162,10 @@ html{
         }
     }
     .bgMorning{
-        background-image: url('images/bgMorning.png');
+        background-image: url('../images/bgMorning.png');
     }
     .bgNight{
-        background-image: url('images/bgNight.png');
+        background-image: url('../images/bgNight.png');
     }
 
 
@@ -185,10 +185,10 @@ html{
         }
     }
     .cloudMorning{
-        background-image: url('images/cloudMorning.png');
+        background-image: url('../images/cloudMorning.png');
     }
     .cloudNight{
-        background-image: url('images/cloudNight.png');
+        background-image: url('../images/cloudNight.png');
     }
 }
 
