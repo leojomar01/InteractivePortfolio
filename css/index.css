@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "8-bit_arcade_inmedium";
 }
 
 html {
@@ -31,6 +32,9 @@ html {
   width: 20vh;
   height: 20vh;
 }
+.avatar .model:hover {
+  cursor: pointer;
+}
 .avatar .left {
   transform: scaleX(-1);
 }
@@ -42,6 +46,9 @@ html {
 }
 .avatar .walking {
   background-image: url("../images/walkingCat.gif");
+}
+.avatar .meowning {
+  background-image: url("../images/meow.gif");
 }
 
 .nightModeSwitch {
@@ -129,6 +136,7 @@ html {
   background-size: auto 20vh;
   top: 80vh;
   height: 20vh;
+  z-index: 50;
 }
 .container .path::-webkit-scrollbar {
   display: none;

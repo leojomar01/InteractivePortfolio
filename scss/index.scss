@@ -1,6 +1,8 @@
 *{
     padding: 0;
     margin: 0;
+    font-family:'8-bit_arcade_inmedium';
+
 }
 html{
     overflow-x: hidden;
@@ -30,6 +32,10 @@ html{
         background-attachment: local;
         width: 20vh;
         height: 20vh;
+        
+        &:hover{
+            cursor: pointer;
+        }
     }
     .left{
         transform: scaleX(-1);
@@ -42,6 +48,9 @@ html{
     }
     .walking{
         background-image: url('../images/walkingCat.gif');
+    }
+    .meowning{
+        background-image: url('../images/meow.gif');
     }
 }
 
@@ -144,6 +153,7 @@ html{
         background-size: auto 20vh;
         top: 80vh;
         height: 20vh;
+        z-index: 50;
 
         &::-webkit-scrollbar{
             display: none;

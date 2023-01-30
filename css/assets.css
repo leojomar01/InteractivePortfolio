@@ -6,2081 +6,833 @@
 .frame {
   width: 90vw;
   height: 80vh;
-  border: 1px solid;
   margin: 0 5vw;
 }
 
-.bird {
+.container {
+  height: 10100vh;
+  position: absolute;
+  top: 0;
+}
+.container .birdAssets {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 49;
+}
+.container .birdAssets::-webkit-scrollbar {
+  display: none;
+}
+.container .birdAssets .birds {
+  width: 10000vw;
+}
+.container .birdAssets .birds .bird {
   background-image: url("../images/bird.gif");
   background-size: 5rem auto;
   width: 5rem;
   height: 5rem;
-  position: fixed;
+  position: absolute;
 }
-
-.box {
-  width: 8vw;
-  height: 4vw;
-  position: fixed;
+.container .birdAssets .birds .box {
+  background-repeat: no-repeat;
+  background-size: auto 5vw;
+  width: 10vw;
+  height: 5vw;
+  position: absolute;
 }
 
 .bird1 {
-  left: 60vw;
-  bottom: 46vh;
-  -webkit-animation: rotate1 54s linear infinite;
-          animation: rotate1 54s linear infinite;
+  left: 228vw;
+  bottom: 37vh;
+  -webkit-animation: rotate1 53s linear infinite;
+          animation: rotate1 53s linear infinite;
 }
 
 .box1 {
-  bottom: 46vh;
-  left: 57vw;
-  -webkit-animation: boxRotate1 54s linear infinite;
-          animation: boxRotate1 54s linear infinite;
+  bottom: 37vh;
+  left: 228vw;
+  -webkit-animation: boxRotate1 53s linear infinite;
+          animation: boxRotate1 53s linear infinite;
+  background-image: url("../images/flags/css.gif");
 }
 
 @-webkit-keyframes rotate1 {
   100% {
-    left: 60vw;
-    bottom: 46vh;
+    left: 228vw;
+    bottom: 37vh;
   }
   75% {
-    left: 55vw;
-    bottom: 41vh;
+    left: 226vw;
+    bottom: 33vh;
   }
   50% {
-    left: 80vw;
-    bottom: 41vh;
+    left: 225vw;
+    bottom: 33vh;
   }
   25% {
-    left: 75vw;
-    bottom: 66vh;
+    left: 230vw;
+    bottom: 34vh;
   }
   0% {
-    left: 60vw;
-    bottom: 46vh;
+    left: 228vw;
+    bottom: 37vh;
   }
 }
 
 @keyframes rotate1 {
   100% {
-    left: 60vw;
-    bottom: 46vh;
+    left: 228vw;
+    bottom: 37vh;
   }
   75% {
-    left: 55vw;
-    bottom: 41vh;
+    left: 226vw;
+    bottom: 33vh;
   }
   50% {
-    left: 80vw;
-    bottom: 41vh;
+    left: 225vw;
+    bottom: 33vh;
   }
   25% {
-    left: 75vw;
-    bottom: 66vh;
+    left: 230vw;
+    bottom: 34vh;
   }
   0% {
-    left: 60vw;
-    bottom: 46vh;
+    left: 228vw;
+    bottom: 37vh;
   }
 }
 @-webkit-keyframes boxRotate1 {
   100% {
-    left: 57vw;
-    bottom: 46vh;
+    left: 220.5vw;
+    bottom: 37vh;
   }
   75% {
-    left: 52vw;
-    bottom: 41vh;
+    left: 218.5vw;
+    bottom: 33vh;
   }
   50% {
-    left: 77vw;
-    bottom: 41vh;
+    left: 217.5vw;
+    bottom: 33vh;
   }
   25% {
-    left: 72vw;
-    bottom: 66vh;
+    left: 222.5vw;
+    bottom: 34vh;
   }
   0% {
-    left: 57vw;
-    bottom: 46vh;
+    left: 220.5vw;
+    bottom: 37vh;
   }
 }
 @keyframes boxRotate1 {
   100% {
-    left: 57vw;
-    bottom: 46vh;
+    left: 220.5vw;
+    bottom: 37vh;
   }
   75% {
-    left: 52vw;
-    bottom: 41vh;
+    left: 218.5vw;
+    bottom: 33vh;
   }
   50% {
-    left: 77vw;
-    bottom: 41vh;
+    left: 217.5vw;
+    bottom: 33vh;
   }
   25% {
-    left: 72vw;
-    bottom: 66vh;
+    left: 222.5vw;
+    bottom: 34vh;
   }
   0% {
-    left: 57vw;
-    bottom: 46vh;
+    left: 220.5vw;
+    bottom: 37vh;
   }
 }
 .bird2 {
-  left: 21vw;
-  bottom: 58vh;
-  -webkit-animation: rotate2 55s linear infinite;
-          animation: rotate2 55s linear infinite;
+  left: 223vw;
+  bottom: 52vh;
+  -webkit-animation: rotate2 82s linear infinite;
+          animation: rotate2 82s linear infinite;
 }
 
 .box2 {
-  bottom: 58vh;
-  left: 18vw;
-  -webkit-animation: boxRotate2 55s linear infinite;
-          animation: boxRotate2 55s linear infinite;
+  bottom: 52vh;
+  left: 223vw;
+  -webkit-animation: boxRotate2 82s linear infinite;
+          animation: boxRotate2 82s linear infinite;
+  background-image: url("../images/flags/html.gif");
 }
 
 @-webkit-keyframes rotate2 {
   100% {
-    left: 21vw;
-    bottom: 58vh;
+    left: 223vw;
+    bottom: 52vh;
   }
   75% {
-    left: 28vw;
-    bottom: 64vh;
+    left: 238vw;
+    bottom: 67vh;
   }
   50% {
-    left: 14vw;
-    bottom: 64vh;
+    left: 224vw;
+    bottom: 67vh;
   }
   25% {
-    left: 21vw;
-    bottom: 51vh;
+    left: 234vw;
+    bottom: 53vh;
   }
   0% {
-    left: 21vw;
-    bottom: 58vh;
+    left: 223vw;
+    bottom: 52vh;
   }
 }
 
 @keyframes rotate2 {
   100% {
-    left: 21vw;
-    bottom: 58vh;
+    left: 223vw;
+    bottom: 52vh;
   }
   75% {
-    left: 28vw;
-    bottom: 64vh;
+    left: 238vw;
+    bottom: 67vh;
   }
   50% {
-    left: 14vw;
-    bottom: 64vh;
+    left: 224vw;
+    bottom: 67vh;
   }
   25% {
-    left: 21vw;
-    bottom: 51vh;
+    left: 234vw;
+    bottom: 53vh;
   }
   0% {
-    left: 21vw;
-    bottom: 58vh;
+    left: 223vw;
+    bottom: 52vh;
   }
 }
 @-webkit-keyframes boxRotate2 {
   100% {
-    left: 18vw;
-    bottom: 58vh;
+    left: 215.5vw;
+    bottom: 52vh;
   }
   75% {
-    left: 25vw;
-    bottom: 64vh;
+    left: 230.5vw;
+    bottom: 67vh;
   }
   50% {
-    left: 11vw;
-    bottom: 64vh;
+    left: 216.5vw;
+    bottom: 67vh;
   }
   25% {
-    left: 18vw;
-    bottom: 51vh;
+    left: 226.5vw;
+    bottom: 53vh;
   }
   0% {
-    left: 18vw;
-    bottom: 58vh;
+    left: 215.5vw;
+    bottom: 52vh;
   }
 }
 @keyframes boxRotate2 {
   100% {
-    left: 18vw;
-    bottom: 58vh;
+    left: 215.5vw;
+    bottom: 52vh;
   }
   75% {
-    left: 25vw;
-    bottom: 64vh;
+    left: 230.5vw;
+    bottom: 67vh;
   }
   50% {
-    left: 11vw;
-    bottom: 64vh;
+    left: 216.5vw;
+    bottom: 67vh;
   }
   25% {
-    left: 18vw;
-    bottom: 51vh;
+    left: 226.5vw;
+    bottom: 53vh;
   }
   0% {
-    left: 18vw;
-    bottom: 58vh;
+    left: 215.5vw;
+    bottom: 52vh;
   }
 }
 .bird3 {
-  left: 46vw;
-  bottom: 30vh;
-  -webkit-animation: rotate3 61s linear infinite;
-          animation: rotate3 61s linear infinite;
+  left: 230vw;
+  bottom: 58vh;
+  -webkit-animation: rotate3 74s linear infinite;
+          animation: rotate3 74s linear infinite;
 }
 
 .box3 {
-  bottom: 30vh;
-  left: 43vw;
-  -webkit-animation: boxRotate3 61s linear infinite;
-          animation: boxRotate3 61s linear infinite;
+  bottom: 58vh;
+  left: 230vw;
+  -webkit-animation: boxRotate3 74s linear infinite;
+          animation: boxRotate3 74s linear infinite;
+  background-image: url("../images/flags/js.gif");
 }
 
 @-webkit-keyframes rotate3 {
   100% {
-    left: 46vw;
-    bottom: 30vh;
+    left: 230vw;
+    bottom: 58vh;
   }
   75% {
-    left: 43vw;
-    bottom: 14vh;
+    left: 229vw;
+    bottom: 72vh;
   }
   50% {
-    left: 57vw;
-    bottom: 14vh;
+    left: 226vw;
+    bottom: 72vh;
   }
   25% {
-    left: 31vw;
-    bottom: 41vh;
+    left: 243vw;
+    bottom: 54vh;
   }
   0% {
-    left: 46vw;
-    bottom: 30vh;
+    left: 230vw;
+    bottom: 58vh;
   }
 }
 
 @keyframes rotate3 {
   100% {
-    left: 46vw;
-    bottom: 30vh;
+    left: 230vw;
+    bottom: 58vh;
   }
   75% {
-    left: 43vw;
-    bottom: 14vh;
+    left: 229vw;
+    bottom: 72vh;
   }
   50% {
-    left: 57vw;
-    bottom: 14vh;
+    left: 226vw;
+    bottom: 72vh;
   }
   25% {
-    left: 31vw;
-    bottom: 41vh;
+    left: 243vw;
+    bottom: 54vh;
   }
   0% {
-    left: 46vw;
-    bottom: 30vh;
+    left: 230vw;
+    bottom: 58vh;
   }
 }
 @-webkit-keyframes boxRotate3 {
   100% {
-    left: 43vw;
-    bottom: 30vh;
+    left: 222.5vw;
+    bottom: 58vh;
   }
   75% {
-    left: 40vw;
-    bottom: 14vh;
+    left: 221.5vw;
+    bottom: 72vh;
   }
   50% {
-    left: 54vw;
-    bottom: 14vh;
+    left: 218.5vw;
+    bottom: 72vh;
   }
   25% {
-    left: 28vw;
-    bottom: 41vh;
+    left: 235.5vw;
+    bottom: 54vh;
   }
   0% {
-    left: 43vw;
-    bottom: 30vh;
+    left: 222.5vw;
+    bottom: 58vh;
   }
 }
 @keyframes boxRotate3 {
   100% {
-    left: 43vw;
-    bottom: 30vh;
+    left: 222.5vw;
+    bottom: 58vh;
   }
   75% {
-    left: 40vw;
-    bottom: 14vh;
+    left: 221.5vw;
+    bottom: 72vh;
   }
   50% {
-    left: 54vw;
-    bottom: 14vh;
+    left: 218.5vw;
+    bottom: 72vh;
   }
   25% {
-    left: 28vw;
-    bottom: 41vh;
+    left: 235.5vw;
+    bottom: 54vh;
   }
   0% {
-    left: 43vw;
-    bottom: 30vh;
+    left: 222.5vw;
+    bottom: 58vh;
   }
 }
 .bird4 {
-  left: 38vw;
-  bottom: 28vh;
-  -webkit-animation: rotate4 83s linear infinite;
-          animation: rotate4 83s linear infinite;
+  left: 215vw;
+  bottom: 88vh;
+  -webkit-animation: rotate4 81s linear infinite;
+          animation: rotate4 81s linear infinite;
 }
 
 .box4 {
-  bottom: 28vh;
-  left: 35vw;
-  -webkit-animation: boxRotate4 83s linear infinite;
-          animation: boxRotate4 83s linear infinite;
+  bottom: 88vh;
+  left: 215vw;
+  -webkit-animation: boxRotate4 81s linear infinite;
+          animation: boxRotate4 81s linear infinite;
+  background-image: url("../images/flags/laravel.gif");
 }
 
 @-webkit-keyframes rotate4 {
   100% {
-    left: 38vw;
-    bottom: 28vh;
+    left: 215vw;
+    bottom: 88vh;
   }
   75% {
-    left: 31vw;
-    bottom: 14vh;
+    left: 215vw;
+    bottom: 100vh;
   }
   50% {
-    left: 36vw;
-    bottom: 14vh;
+    left: 201vw;
+    bottom: 100vh;
   }
   25% {
-    left: 33vw;
-    bottom: 26vh;
+    left: 202vw;
+    bottom: 74vh;
   }
   0% {
-    left: 38vw;
-    bottom: 28vh;
+    left: 215vw;
+    bottom: 88vh;
   }
 }
 
 @keyframes rotate4 {
   100% {
-    left: 38vw;
-    bottom: 28vh;
+    left: 215vw;
+    bottom: 88vh;
   }
   75% {
-    left: 31vw;
-    bottom: 14vh;
+    left: 215vw;
+    bottom: 100vh;
   }
   50% {
-    left: 36vw;
-    bottom: 14vh;
+    left: 201vw;
+    bottom: 100vh;
   }
   25% {
-    left: 33vw;
-    bottom: 26vh;
+    left: 202vw;
+    bottom: 74vh;
   }
   0% {
-    left: 38vw;
-    bottom: 28vh;
+    left: 215vw;
+    bottom: 88vh;
   }
 }
 @-webkit-keyframes boxRotate4 {
   100% {
-    left: 35vw;
-    bottom: 28vh;
+    left: 207.5vw;
+    bottom: 88vh;
   }
   75% {
-    left: 28vw;
-    bottom: 14vh;
+    left: 207.5vw;
+    bottom: 100vh;
   }
   50% {
-    left: 33vw;
-    bottom: 14vh;
+    left: 193.5vw;
+    bottom: 100vh;
   }
   25% {
-    left: 30vw;
-    bottom: 26vh;
+    left: 194.5vw;
+    bottom: 74vh;
   }
   0% {
-    left: 35vw;
-    bottom: 28vh;
+    left: 207.5vw;
+    bottom: 88vh;
   }
 }
 @keyframes boxRotate4 {
   100% {
-    left: 35vw;
-    bottom: 28vh;
+    left: 207.5vw;
+    bottom: 88vh;
   }
   75% {
-    left: 28vw;
-    bottom: 14vh;
+    left: 207.5vw;
+    bottom: 100vh;
   }
   50% {
-    left: 33vw;
-    bottom: 14vh;
+    left: 193.5vw;
+    bottom: 100vh;
   }
   25% {
-    left: 30vw;
-    bottom: 26vh;
+    left: 194.5vw;
+    bottom: 74vh;
   }
   0% {
-    left: 35vw;
-    bottom: 28vh;
+    left: 207.5vw;
+    bottom: 88vh;
   }
 }
 .bird5 {
-  left: 61vw;
-  bottom: 79vh;
-  -webkit-animation: rotate5 45s linear infinite;
-          animation: rotate5 45s linear infinite;
+  left: 274vw;
+  bottom: 63vh;
+  -webkit-animation: rotate5 79s linear infinite;
+          animation: rotate5 79s linear infinite;
 }
 
 .box5 {
-  bottom: 79vh;
-  left: 58vw;
-  -webkit-animation: boxRotate5 45s linear infinite;
-          animation: boxRotate5 45s linear infinite;
+  bottom: 63vh;
+  left: 274vw;
+  -webkit-animation: boxRotate5 79s linear infinite;
+          animation: boxRotate5 79s linear infinite;
+  background-image: url("../images/flags/reactJS.gif");
 }
 
 @-webkit-keyframes rotate5 {
   100% {
-    left: 61vw;
-    bottom: 79vh;
+    left: 274vw;
+    bottom: 63vh;
   }
   75% {
-    left: 42vw;
-    bottom: 88vh;
+    left: 277vw;
+    bottom: 69vh;
   }
   50% {
-    left: 50vw;
-    bottom: 88vh;
+    left: 267vw;
+    bottom: 69vh;
   }
   25% {
-    left: 64vw;
-    bottom: 68vh;
+    left: 269vw;
+    bottom: 56vh;
   }
   0% {
-    left: 61vw;
-    bottom: 79vh;
+    left: 274vw;
+    bottom: 63vh;
   }
 }
 
 @keyframes rotate5 {
   100% {
-    left: 61vw;
-    bottom: 79vh;
+    left: 274vw;
+    bottom: 63vh;
   }
   75% {
-    left: 42vw;
-    bottom: 88vh;
+    left: 277vw;
+    bottom: 69vh;
   }
   50% {
-    left: 50vw;
-    bottom: 88vh;
+    left: 267vw;
+    bottom: 69vh;
   }
   25% {
-    left: 64vw;
-    bottom: 68vh;
+    left: 269vw;
+    bottom: 56vh;
   }
   0% {
-    left: 61vw;
-    bottom: 79vh;
+    left: 274vw;
+    bottom: 63vh;
   }
 }
 @-webkit-keyframes boxRotate5 {
   100% {
-    left: 58vw;
-    bottom: 79vh;
+    left: 266.5vw;
+    bottom: 63vh;
   }
   75% {
-    left: 39vw;
-    bottom: 88vh;
+    left: 269.5vw;
+    bottom: 69vh;
   }
   50% {
-    left: 47vw;
-    bottom: 88vh;
+    left: 259.5vw;
+    bottom: 69vh;
   }
   25% {
-    left: 61vw;
-    bottom: 68vh;
+    left: 261.5vw;
+    bottom: 56vh;
   }
   0% {
-    left: 58vw;
-    bottom: 79vh;
+    left: 266.5vw;
+    bottom: 63vh;
   }
 }
 @keyframes boxRotate5 {
   100% {
-    left: 58vw;
-    bottom: 79vh;
+    left: 266.5vw;
+    bottom: 63vh;
   }
   75% {
-    left: 39vw;
-    bottom: 88vh;
+    left: 269.5vw;
+    bottom: 69vh;
   }
   50% {
-    left: 47vw;
-    bottom: 88vh;
+    left: 259.5vw;
+    bottom: 69vh;
   }
   25% {
-    left: 61vw;
-    bottom: 68vh;
+    left: 261.5vw;
+    bottom: 56vh;
   }
   0% {
-    left: 58vw;
-    bottom: 79vh;
+    left: 266.5vw;
+    bottom: 63vh;
   }
 }
 .bird6 {
-  left: 11vw;
-  bottom: 31vh;
-  -webkit-animation: rotate6 52s linear infinite;
-          animation: rotate6 52s linear infinite;
+  left: 243vw;
+  bottom: 62vh;
+  -webkit-animation: rotate6 43s linear infinite;
+          animation: rotate6 43s linear infinite;
 }
 
 .box6 {
-  bottom: 31vh;
-  left: 8vw;
-  -webkit-animation: boxRotate6 52s linear infinite;
-          animation: boxRotate6 52s linear infinite;
+  bottom: 62vh;
+  left: 243vw;
+  -webkit-animation: boxRotate6 43s linear infinite;
+          animation: boxRotate6 43s linear infinite;
+  background-image: url("../images/flags/sass.gif");
 }
 
 @-webkit-keyframes rotate6 {
   100% {
-    left: 11vw;
-    bottom: 31vh;
+    left: 243vw;
+    bottom: 62vh;
   }
   75% {
-    left: 14vw;
-    bottom: 50vh;
+    left: 237vw;
+    bottom: 59vh;
   }
   50% {
-    left: 0vw;
-    bottom: 50vh;
+    left: 252vw;
+    bottom: 59vh;
   }
   25% {
-    left: 28vw;
-    bottom: 20vh;
+    left: 256vw;
+    bottom: 71vh;
   }
   0% {
-    left: 11vw;
-    bottom: 31vh;
+    left: 243vw;
+    bottom: 62vh;
   }
 }
 
 @keyframes rotate6 {
   100% {
-    left: 11vw;
-    bottom: 31vh;
+    left: 243vw;
+    bottom: 62vh;
   }
   75% {
-    left: 14vw;
-    bottom: 50vh;
+    left: 237vw;
+    bottom: 59vh;
   }
   50% {
-    left: 0vw;
-    bottom: 50vh;
+    left: 252vw;
+    bottom: 59vh;
   }
   25% {
-    left: 28vw;
-    bottom: 20vh;
+    left: 256vw;
+    bottom: 71vh;
   }
   0% {
-    left: 11vw;
-    bottom: 31vh;
+    left: 243vw;
+    bottom: 62vh;
   }
 }
 @-webkit-keyframes boxRotate6 {
   100% {
-    left: 8vw;
-    bottom: 31vh;
+    left: 235.5vw;
+    bottom: 62vh;
   }
   75% {
-    left: 11vw;
-    bottom: 50vh;
+    left: 229.5vw;
+    bottom: 59vh;
   }
   50% {
-    left: -3vw;
-    bottom: 50vh;
+    left: 244.5vw;
+    bottom: 59vh;
   }
   25% {
-    left: 25vw;
-    bottom: 20vh;
+    left: 248.5vw;
+    bottom: 71vh;
   }
   0% {
-    left: 8vw;
-    bottom: 31vh;
+    left: 235.5vw;
+    bottom: 62vh;
   }
 }
 @keyframes boxRotate6 {
   100% {
-    left: 8vw;
-    bottom: 31vh;
+    left: 235.5vw;
+    bottom: 62vh;
   }
   75% {
-    left: 11vw;
-    bottom: 50vh;
+    left: 229.5vw;
+    bottom: 59vh;
   }
   50% {
-    left: -3vw;
-    bottom: 50vh;
+    left: 244.5vw;
+    bottom: 59vh;
   }
   25% {
-    left: 25vw;
-    bottom: 20vh;
+    left: 248.5vw;
+    bottom: 71vh;
   }
   0% {
-    left: 8vw;
-    bottom: 31vh;
+    left: 235.5vw;
+    bottom: 62vh;
   }
 }
 .bird7 {
-  left: 28vw;
-  bottom: 32vh;
-  -webkit-animation: rotate7 75s linear infinite;
-          animation: rotate7 75s linear infinite;
+  left: 276vw;
+  bottom: 62vh;
+  -webkit-animation: rotate7 56s linear infinite;
+          animation: rotate7 56s linear infinite;
 }
 
 .box7 {
-  bottom: 32vh;
-  left: 25vw;
-  -webkit-animation: boxRotate7 75s linear infinite;
-          animation: boxRotate7 75s linear infinite;
+  bottom: 62vh;
+  left: 276vw;
+  -webkit-animation: boxRotate7 56s linear infinite;
+          animation: boxRotate7 56s linear infinite;
+  background-image: url("../images/flags/php.gif");
 }
 
 @-webkit-keyframes rotate7 {
   100% {
-    left: 28vw;
-    bottom: 32vh;
+    left: 276vw;
+    bottom: 62vh;
   }
   75% {
-    left: 45vw;
-    bottom: 24vh;
+    left: 282vw;
+    bottom: 58vh;
   }
   50% {
-    left: 19vw;
-    bottom: 24vh;
+    left: 290vw;
+    bottom: 58vh;
   }
   25% {
-    left: 20vw;
-    bottom: 23vh;
+    left: 272vw;
+    bottom: 76vh;
   }
   0% {
-    left: 28vw;
-    bottom: 32vh;
+    left: 276vw;
+    bottom: 62vh;
   }
 }
 
 @keyframes rotate7 {
   100% {
-    left: 28vw;
-    bottom: 32vh;
+    left: 276vw;
+    bottom: 62vh;
   }
   75% {
-    left: 45vw;
-    bottom: 24vh;
+    left: 282vw;
+    bottom: 58vh;
   }
   50% {
-    left: 19vw;
-    bottom: 24vh;
+    left: 290vw;
+    bottom: 58vh;
   }
   25% {
-    left: 20vw;
-    bottom: 23vh;
+    left: 272vw;
+    bottom: 76vh;
   }
   0% {
-    left: 28vw;
-    bottom: 32vh;
+    left: 276vw;
+    bottom: 62vh;
   }
 }
 @-webkit-keyframes boxRotate7 {
   100% {
-    left: 25vw;
-    bottom: 32vh;
+    left: 268.5vw;
+    bottom: 62vh;
   }
   75% {
-    left: 42vw;
-    bottom: 24vh;
+    left: 274.5vw;
+    bottom: 58vh;
   }
   50% {
-    left: 16vw;
-    bottom: 24vh;
+    left: 282.5vw;
+    bottom: 58vh;
   }
   25% {
-    left: 17vw;
-    bottom: 23vh;
+    left: 264.5vw;
+    bottom: 76vh;
   }
   0% {
-    left: 25vw;
-    bottom: 32vh;
+    left: 268.5vw;
+    bottom: 62vh;
   }
 }
 @keyframes boxRotate7 {
   100% {
-    left: 25vw;
-    bottom: 32vh;
+    left: 268.5vw;
+    bottom: 62vh;
   }
   75% {
-    left: 42vw;
-    bottom: 24vh;
+    left: 274.5vw;
+    bottom: 58vh;
   }
   50% {
-    left: 16vw;
-    bottom: 24vh;
+    left: 282.5vw;
+    bottom: 58vh;
   }
   25% {
-    left: 17vw;
-    bottom: 23vh;
+    left: 264.5vw;
+    bottom: 76vh;
   }
   0% {
-    left: 25vw;
-    bottom: 32vh;
+    left: 268.5vw;
+    bottom: 62vh;
   }
 }
-.bird8 {
-  left: 33vw;
-  bottom: 73vh;
-  -webkit-animation: rotate8 48s linear infinite;
-          animation: rotate8 48s linear infinite;
+.container .blimpAssets {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 9;
+}
+.container .blimpAssets::-webkit-scrollbar {
+  display: none;
+}
+.container .blimpAssets .content {
+  width: 10000vw;
+}
+.container .blimpAssets .content .blimp {
+  background-repeat: no-repeat;
+  background-size: auto 10vw;
+  width: 30vw;
+  height: 10vw;
+  position: absolute;
+  -webkit-animation: blimpMovement 100s linear infinite;
+          animation: blimpMovement 100s linear infinite;
+  background-image: url("/images/blimp.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .blimpAssets .content .blimp p {
+  font-size: 9vh;
+  color: wheat;
+  text-shadow: 2px 3px black;
 }
 
-.box8 {
-  bottom: 73vh;
-  left: 30vw;
-  -webkit-animation: boxRotate8 48s linear infinite;
-          animation: boxRotate8 48s linear infinite;
-}
-
-@-webkit-keyframes rotate8 {
+@-webkit-keyframes blimpMovement {
   100% {
-    left: 33vw;
-    bottom: 73vh;
-  }
-  75% {
-    left: 23vw;
-    bottom: 71vh;
-  }
-  50% {
-    left: 25vw;
-    bottom: 71vh;
-  }
-  25% {
-    left: 28vw;
-    bottom: 65vh;
-  }
-  0% {
-    left: 33vw;
-    bottom: 73vh;
-  }
-}
-
-@keyframes rotate8 {
-  100% {
-    left: 33vw;
-    bottom: 73vh;
-  }
-  75% {
-    left: 23vw;
-    bottom: 71vh;
-  }
-  50% {
-    left: 25vw;
-    bottom: 71vh;
-  }
-  25% {
-    left: 28vw;
-    bottom: 65vh;
-  }
-  0% {
-    left: 33vw;
-    bottom: 73vh;
-  }
-}
-@-webkit-keyframes boxRotate8 {
-  100% {
-    left: 30vw;
-    bottom: 73vh;
-  }
-  75% {
-    left: 20vw;
-    bottom: 71vh;
-  }
-  50% {
-    left: 22vw;
-    bottom: 71vh;
-  }
-  25% {
-    left: 25vw;
-    bottom: 65vh;
-  }
-  0% {
-    left: 30vw;
-    bottom: 73vh;
-  }
-}
-@keyframes boxRotate8 {
-  100% {
-    left: 30vw;
-    bottom: 73vh;
-  }
-  75% {
-    left: 20vw;
-    bottom: 71vh;
-  }
-  50% {
-    left: 22vw;
-    bottom: 71vh;
-  }
-  25% {
-    left: 25vw;
-    bottom: 65vh;
-  }
-  0% {
-    left: 30vw;
-    bottom: 73vh;
-  }
-}
-.bird9 {
-  left: 54vw;
-  bottom: 26vh;
-  -webkit-animation: rotate9 61s linear infinite;
-          animation: rotate9 61s linear infinite;
-}
-
-.box9 {
-  bottom: 26vh;
-  left: 51vw;
-  -webkit-animation: boxRotate9 61s linear infinite;
-          animation: boxRotate9 61s linear infinite;
-}
-
-@-webkit-keyframes rotate9 {
-  100% {
-    left: 54vw;
-    bottom: 26vh;
-  }
-  75% {
-    left: 60vw;
-    bottom: 33vh;
-  }
-  50% {
-    left: 71vw;
-    bottom: 33vh;
-  }
-  25% {
-    left: 60vw;
-    bottom: 43vh;
-  }
-  0% {
-    left: 54vw;
-    bottom: 26vh;
-  }
-}
-
-@keyframes rotate9 {
-  100% {
-    left: 54vw;
-    bottom: 26vh;
-  }
-  75% {
-    left: 60vw;
-    bottom: 33vh;
-  }
-  50% {
-    left: 71vw;
-    bottom: 33vh;
-  }
-  25% {
-    left: 60vw;
-    bottom: 43vh;
-  }
-  0% {
-    left: 54vw;
-    bottom: 26vh;
-  }
-}
-@-webkit-keyframes boxRotate9 {
-  100% {
-    left: 51vw;
-    bottom: 26vh;
-  }
-  75% {
-    left: 57vw;
-    bottom: 33vh;
-  }
-  50% {
-    left: 68vw;
-    bottom: 33vh;
-  }
-  25% {
-    left: 57vw;
-    bottom: 43vh;
-  }
-  0% {
-    left: 51vw;
-    bottom: 26vh;
-  }
-}
-@keyframes boxRotate9 {
-  100% {
-    left: 51vw;
-    bottom: 26vh;
-  }
-  75% {
-    left: 57vw;
-    bottom: 33vh;
-  }
-  50% {
-    left: 68vw;
-    bottom: 33vh;
-  }
-  25% {
-    left: 57vw;
-    bottom: 43vh;
-  }
-  0% {
-    left: 51vw;
-    bottom: 26vh;
-  }
-}
-.bird10 {
-  left: 58vw;
-  bottom: 81vh;
-  -webkit-animation: rotate10 89s linear infinite;
-          animation: rotate10 89s linear infinite;
-}
-
-.box10 {
-  bottom: 81vh;
-  left: 55vw;
-  -webkit-animation: boxRotate10 89s linear infinite;
-          animation: boxRotate10 89s linear infinite;
-}
-
-@-webkit-keyframes rotate10 {
-  100% {
-    left: 58vw;
-    bottom: 81vh;
-  }
-  75% {
-    left: 68vw;
-    bottom: 78vh;
-  }
-  50% {
-    left: 73vw;
-    bottom: 78vh;
-  }
-  25% {
-    left: 60vw;
-    bottom: 96vh;
-  }
-  0% {
-    left: 58vw;
-    bottom: 81vh;
-  }
-}
-
-@keyframes rotate10 {
-  100% {
-    left: 58vw;
-    bottom: 81vh;
-  }
-  75% {
-    left: 68vw;
-    bottom: 78vh;
-  }
-  50% {
-    left: 73vw;
-    bottom: 78vh;
-  }
-  25% {
-    left: 60vw;
-    bottom: 96vh;
-  }
-  0% {
-    left: 58vw;
-    bottom: 81vh;
-  }
-}
-@-webkit-keyframes boxRotate10 {
-  100% {
-    left: 55vw;
-    bottom: 81vh;
-  }
-  75% {
-    left: 65vw;
-    bottom: 78vh;
-  }
-  50% {
-    left: 70vw;
-    bottom: 78vh;
-  }
-  25% {
-    left: 57vw;
-    bottom: 96vh;
-  }
-  0% {
-    left: 55vw;
-    bottom: 81vh;
-  }
-}
-@keyframes boxRotate10 {
-  100% {
-    left: 55vw;
-    bottom: 81vh;
-  }
-  75% {
-    left: 65vw;
-    bottom: 78vh;
-  }
-  50% {
-    left: 70vw;
-    bottom: 78vh;
-  }
-  25% {
-    left: 57vw;
-    bottom: 96vh;
-  }
-  0% {
-    left: 55vw;
-    bottom: 81vh;
-  }
-}
-.bird11 {
-  left: 63vw;
-  bottom: 44vh;
-  -webkit-animation: rotate11 44s linear infinite;
-          animation: rotate11 44s linear infinite;
-}
-
-.box11 {
-  bottom: 44vh;
-  left: 60vw;
-  -webkit-animation: boxRotate11 44s linear infinite;
-          animation: boxRotate11 44s linear infinite;
-}
-
-@-webkit-keyframes rotate11 {
-  100% {
-    left: 63vw;
-    bottom: 44vh;
-  }
-  75% {
-    left: 61vw;
-    bottom: 43vh;
-  }
-  50% {
-    left: 75vw;
-    bottom: 43vh;
-  }
-  25% {
-    left: 64vw;
-    bottom: 56vh;
-  }
-  0% {
-    left: 63vw;
-    bottom: 44vh;
-  }
-}
-
-@keyframes rotate11 {
-  100% {
-    left: 63vw;
-    bottom: 44vh;
-  }
-  75% {
-    left: 61vw;
-    bottom: 43vh;
-  }
-  50% {
-    left: 75vw;
-    bottom: 43vh;
-  }
-  25% {
-    left: 64vw;
-    bottom: 56vh;
-  }
-  0% {
-    left: 63vw;
-    bottom: 44vh;
-  }
-}
-@-webkit-keyframes boxRotate11 {
-  100% {
-    left: 60vw;
-    bottom: 44vh;
-  }
-  75% {
-    left: 58vw;
-    bottom: 43vh;
-  }
-  50% {
-    left: 72vw;
-    bottom: 43vh;
-  }
-  25% {
-    left: 61vw;
-    bottom: 56vh;
-  }
-  0% {
-    left: 60vw;
-    bottom: 44vh;
-  }
-}
-@keyframes boxRotate11 {
-  100% {
-    left: 60vw;
-    bottom: 44vh;
-  }
-  75% {
-    left: 58vw;
-    bottom: 43vh;
-  }
-  50% {
-    left: 72vw;
-    bottom: 43vh;
-  }
-  25% {
-    left: 61vw;
-    bottom: 56vh;
-  }
-  0% {
-    left: 60vw;
-    bottom: 44vh;
-  }
-}
-.bird12 {
-  left: 53vw;
-  bottom: 75vh;
-  -webkit-animation: rotate12 83s linear infinite;
-          animation: rotate12 83s linear infinite;
-}
-
-.box12 {
-  bottom: 75vh;
-  left: 50vw;
-  -webkit-animation: boxRotate12 83s linear infinite;
-          animation: boxRotate12 83s linear infinite;
-}
-
-@-webkit-keyframes rotate12 {
-  100% {
-    left: 53vw;
+    left: 190vw;
     bottom: 75vh;
   }
-  75% {
-    left: 73vw;
-    bottom: 76vh;
-  }
   50% {
-    left: 48vw;
-    bottom: 76vh;
-  }
-  25% {
-    left: 59vw;
+    left: 188vw;
     bottom: 70vh;
   }
   0% {
-    left: 53vw;
+    left: 190vw;
     bottom: 75vh;
   }
 }
 
-@keyframes rotate12 {
+@keyframes blimpMovement {
   100% {
-    left: 53vw;
+    left: 190vw;
     bottom: 75vh;
   }
-  75% {
-    left: 73vw;
-    bottom: 76vh;
-  }
   50% {
-    left: 48vw;
-    bottom: 76vh;
-  }
-  25% {
-    left: 59vw;
+    left: 188vw;
     bottom: 70vh;
   }
   0% {
-    left: 53vw;
+    left: 190vw;
     bottom: 75vh;
-  }
-}
-@-webkit-keyframes boxRotate12 {
-  100% {
-    left: 50vw;
-    bottom: 75vh;
-  }
-  75% {
-    left: 70vw;
-    bottom: 76vh;
-  }
-  50% {
-    left: 45vw;
-    bottom: 76vh;
-  }
-  25% {
-    left: 56vw;
-    bottom: 70vh;
-  }
-  0% {
-    left: 50vw;
-    bottom: 75vh;
-  }
-}
-@keyframes boxRotate12 {
-  100% {
-    left: 50vw;
-    bottom: 75vh;
-  }
-  75% {
-    left: 70vw;
-    bottom: 76vh;
-  }
-  50% {
-    left: 45vw;
-    bottom: 76vh;
-  }
-  25% {
-    left: 56vw;
-    bottom: 70vh;
-  }
-  0% {
-    left: 50vw;
-    bottom: 75vh;
-  }
-}
-.bird13 {
-  left: 69vw;
-  bottom: 49vh;
-  -webkit-animation: rotate13 41s linear infinite;
-          animation: rotate13 41s linear infinite;
-}
-
-.box13 {
-  bottom: 49vh;
-  left: 66vw;
-  -webkit-animation: boxRotate13 41s linear infinite;
-          animation: boxRotate13 41s linear infinite;
-}
-
-@-webkit-keyframes rotate13 {
-  100% {
-    left: 69vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 70vw;
-    bottom: 49vh;
-  }
-  50% {
-    left: 61vw;
-    bottom: 49vh;
-  }
-  25% {
-    left: 78vw;
-    bottom: 41vh;
-  }
-  0% {
-    left: 69vw;
-    bottom: 49vh;
-  }
-}
-
-@keyframes rotate13 {
-  100% {
-    left: 69vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 70vw;
-    bottom: 49vh;
-  }
-  50% {
-    left: 61vw;
-    bottom: 49vh;
-  }
-  25% {
-    left: 78vw;
-    bottom: 41vh;
-  }
-  0% {
-    left: 69vw;
-    bottom: 49vh;
-  }
-}
-@-webkit-keyframes boxRotate13 {
-  100% {
-    left: 66vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 67vw;
-    bottom: 49vh;
-  }
-  50% {
-    left: 58vw;
-    bottom: 49vh;
-  }
-  25% {
-    left: 75vw;
-    bottom: 41vh;
-  }
-  0% {
-    left: 66vw;
-    bottom: 49vh;
-  }
-}
-@keyframes boxRotate13 {
-  100% {
-    left: 66vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 67vw;
-    bottom: 49vh;
-  }
-  50% {
-    left: 58vw;
-    bottom: 49vh;
-  }
-  25% {
-    left: 75vw;
-    bottom: 41vh;
-  }
-  0% {
-    left: 66vw;
-    bottom: 49vh;
-  }
-}
-.bird14 {
-  left: 23vw;
-  bottom: 78vh;
-  -webkit-animation: rotate14 53s linear infinite;
-          animation: rotate14 53s linear infinite;
-}
-
-.box14 {
-  bottom: 78vh;
-  left: 20vw;
-  -webkit-animation: boxRotate14 53s linear infinite;
-          animation: boxRotate14 53s linear infinite;
-}
-
-@-webkit-keyframes rotate14 {
-  100% {
-    left: 23vw;
-    bottom: 78vh;
-  }
-  75% {
-    left: 31vw;
-    bottom: 62vh;
-  }
-  50% {
-    left: 42vw;
-    bottom: 62vh;
-  }
-  25% {
-    left: 23vw;
-    bottom: 97vh;
-  }
-  0% {
-    left: 23vw;
-    bottom: 78vh;
-  }
-}
-
-@keyframes rotate14 {
-  100% {
-    left: 23vw;
-    bottom: 78vh;
-  }
-  75% {
-    left: 31vw;
-    bottom: 62vh;
-  }
-  50% {
-    left: 42vw;
-    bottom: 62vh;
-  }
-  25% {
-    left: 23vw;
-    bottom: 97vh;
-  }
-  0% {
-    left: 23vw;
-    bottom: 78vh;
-  }
-}
-@-webkit-keyframes boxRotate14 {
-  100% {
-    left: 20vw;
-    bottom: 78vh;
-  }
-  75% {
-    left: 28vw;
-    bottom: 62vh;
-  }
-  50% {
-    left: 39vw;
-    bottom: 62vh;
-  }
-  25% {
-    left: 20vw;
-    bottom: 97vh;
-  }
-  0% {
-    left: 20vw;
-    bottom: 78vh;
-  }
-}
-@keyframes boxRotate14 {
-  100% {
-    left: 20vw;
-    bottom: 78vh;
-  }
-  75% {
-    left: 28vw;
-    bottom: 62vh;
-  }
-  50% {
-    left: 39vw;
-    bottom: 62vh;
-  }
-  25% {
-    left: 20vw;
-    bottom: 97vh;
-  }
-  0% {
-    left: 20vw;
-    bottom: 78vh;
-  }
-}
-.bird15 {
-  left: 53vw;
-  bottom: 34vh;
-  -webkit-animation: rotate15 41s linear infinite;
-          animation: rotate15 41s linear infinite;
-}
-
-.box15 {
-  bottom: 34vh;
-  left: 50vw;
-  -webkit-animation: boxRotate15 41s linear infinite;
-          animation: boxRotate15 41s linear infinite;
-}
-
-@-webkit-keyframes rotate15 {
-  100% {
-    left: 53vw;
-    bottom: 34vh;
-  }
-  75% {
-    left: 71vw;
-    bottom: 54vh;
-  }
-  50% {
-    left: 56vw;
-    bottom: 54vh;
-  }
-  25% {
-    left: 43vw;
-    bottom: 37vh;
-  }
-  0% {
-    left: 53vw;
-    bottom: 34vh;
-  }
-}
-
-@keyframes rotate15 {
-  100% {
-    left: 53vw;
-    bottom: 34vh;
-  }
-  75% {
-    left: 71vw;
-    bottom: 54vh;
-  }
-  50% {
-    left: 56vw;
-    bottom: 54vh;
-  }
-  25% {
-    left: 43vw;
-    bottom: 37vh;
-  }
-  0% {
-    left: 53vw;
-    bottom: 34vh;
-  }
-}
-@-webkit-keyframes boxRotate15 {
-  100% {
-    left: 50vw;
-    bottom: 34vh;
-  }
-  75% {
-    left: 68vw;
-    bottom: 54vh;
-  }
-  50% {
-    left: 53vw;
-    bottom: 54vh;
-  }
-  25% {
-    left: 40vw;
-    bottom: 37vh;
-  }
-  0% {
-    left: 50vw;
-    bottom: 34vh;
-  }
-}
-@keyframes boxRotate15 {
-  100% {
-    left: 50vw;
-    bottom: 34vh;
-  }
-  75% {
-    left: 68vw;
-    bottom: 54vh;
-  }
-  50% {
-    left: 53vw;
-    bottom: 54vh;
-  }
-  25% {
-    left: 40vw;
-    bottom: 37vh;
-  }
-  0% {
-    left: 50vw;
-    bottom: 34vh;
-  }
-}
-.bird16 {
-  left: 88vw;
-  bottom: 67vh;
-  -webkit-animation: rotate16 86s linear infinite;
-          animation: rotate16 86s linear infinite;
-}
-
-.box16 {
-  bottom: 67vh;
-  left: 85vw;
-  -webkit-animation: boxRotate16 86s linear infinite;
-          animation: boxRotate16 86s linear infinite;
-}
-
-@-webkit-keyframes rotate16 {
-  100% {
-    left: 88vw;
-    bottom: 67vh;
-  }
-  75% {
-    left: 72vw;
-    bottom: 53vh;
-  }
-  50% {
-    left: 71vw;
-    bottom: 53vh;
-  }
-  25% {
-    left: 89vw;
-    bottom: 50vh;
-  }
-  0% {
-    left: 88vw;
-    bottom: 67vh;
-  }
-}
-
-@keyframes rotate16 {
-  100% {
-    left: 88vw;
-    bottom: 67vh;
-  }
-  75% {
-    left: 72vw;
-    bottom: 53vh;
-  }
-  50% {
-    left: 71vw;
-    bottom: 53vh;
-  }
-  25% {
-    left: 89vw;
-    bottom: 50vh;
-  }
-  0% {
-    left: 88vw;
-    bottom: 67vh;
-  }
-}
-@-webkit-keyframes boxRotate16 {
-  100% {
-    left: 85vw;
-    bottom: 67vh;
-  }
-  75% {
-    left: 69vw;
-    bottom: 53vh;
-  }
-  50% {
-    left: 68vw;
-    bottom: 53vh;
-  }
-  25% {
-    left: 86vw;
-    bottom: 50vh;
-  }
-  0% {
-    left: 85vw;
-    bottom: 67vh;
-  }
-}
-@keyframes boxRotate16 {
-  100% {
-    left: 85vw;
-    bottom: 67vh;
-  }
-  75% {
-    left: 69vw;
-    bottom: 53vh;
-  }
-  50% {
-    left: 68vw;
-    bottom: 53vh;
-  }
-  25% {
-    left: 86vw;
-    bottom: 50vh;
-  }
-  0% {
-    left: 85vw;
-    bottom: 67vh;
-  }
-}
-.bird17 {
-  left: 21vw;
-  bottom: 48vh;
-  -webkit-animation: rotate17 53s linear infinite;
-          animation: rotate17 53s linear infinite;
-}
-
-.box17 {
-  bottom: 48vh;
-  left: 18vw;
-  -webkit-animation: boxRotate17 53s linear infinite;
-          animation: boxRotate17 53s linear infinite;
-}
-
-@-webkit-keyframes rotate17 {
-  100% {
-    left: 21vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 22vw;
-    bottom: 45vh;
-  }
-  50% {
-    left: 33vw;
-    bottom: 45vh;
-  }
-  25% {
-    left: 20vw;
-    bottom: 60vh;
-  }
-  0% {
-    left: 21vw;
-    bottom: 48vh;
-  }
-}
-
-@keyframes rotate17 {
-  100% {
-    left: 21vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 22vw;
-    bottom: 45vh;
-  }
-  50% {
-    left: 33vw;
-    bottom: 45vh;
-  }
-  25% {
-    left: 20vw;
-    bottom: 60vh;
-  }
-  0% {
-    left: 21vw;
-    bottom: 48vh;
-  }
-}
-@-webkit-keyframes boxRotate17 {
-  100% {
-    left: 18vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 19vw;
-    bottom: 45vh;
-  }
-  50% {
-    left: 30vw;
-    bottom: 45vh;
-  }
-  25% {
-    left: 17vw;
-    bottom: 60vh;
-  }
-  0% {
-    left: 18vw;
-    bottom: 48vh;
-  }
-}
-@keyframes boxRotate17 {
-  100% {
-    left: 18vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 19vw;
-    bottom: 45vh;
-  }
-  50% {
-    left: 30vw;
-    bottom: 45vh;
-  }
-  25% {
-    left: 17vw;
-    bottom: 60vh;
-  }
-  0% {
-    left: 18vw;
-    bottom: 48vh;
-  }
-}
-.bird18 {
-  left: 42vw;
-  bottom: 49vh;
-  -webkit-animation: rotate18 44s linear infinite;
-          animation: rotate18 44s linear infinite;
-}
-
-.box18 {
-  bottom: 49vh;
-  left: 39vw;
-  -webkit-animation: boxRotate18 44s linear infinite;
-          animation: boxRotate18 44s linear infinite;
-}
-
-@-webkit-keyframes rotate18 {
-  100% {
-    left: 42vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 46vw;
-    bottom: 46vh;
-  }
-  50% {
-    left: 54vw;
-    bottom: 46vh;
-  }
-  25% {
-    left: 45vw;
-    bottom: 61vh;
-  }
-  0% {
-    left: 42vw;
-    bottom: 49vh;
-  }
-}
-
-@keyframes rotate18 {
-  100% {
-    left: 42vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 46vw;
-    bottom: 46vh;
-  }
-  50% {
-    left: 54vw;
-    bottom: 46vh;
-  }
-  25% {
-    left: 45vw;
-    bottom: 61vh;
-  }
-  0% {
-    left: 42vw;
-    bottom: 49vh;
-  }
-}
-@-webkit-keyframes boxRotate18 {
-  100% {
-    left: 39vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 43vw;
-    bottom: 46vh;
-  }
-  50% {
-    left: 51vw;
-    bottom: 46vh;
-  }
-  25% {
-    left: 42vw;
-    bottom: 61vh;
-  }
-  0% {
-    left: 39vw;
-    bottom: 49vh;
-  }
-}
-@keyframes boxRotate18 {
-  100% {
-    left: 39vw;
-    bottom: 49vh;
-  }
-  75% {
-    left: 43vw;
-    bottom: 46vh;
-  }
-  50% {
-    left: 51vw;
-    bottom: 46vh;
-  }
-  25% {
-    left: 42vw;
-    bottom: 61vh;
-  }
-  0% {
-    left: 39vw;
-    bottom: 49vh;
-  }
-}
-.bird19 {
-  left: 19vw;
-  bottom: 40vh;
-  -webkit-animation: rotate19 57s linear infinite;
-          animation: rotate19 57s linear infinite;
-}
-
-.box19 {
-  bottom: 40vh;
-  left: 16vw;
-  -webkit-animation: boxRotate19 57s linear infinite;
-          animation: boxRotate19 57s linear infinite;
-}
-
-@-webkit-keyframes rotate19 {
-  100% {
-    left: 19vw;
-    bottom: 40vh;
-  }
-  75% {
-    left: 33vw;
-    bottom: 24vh;
-  }
-  50% {
-    left: 12vw;
-    bottom: 24vh;
-  }
-  25% {
-    left: 26vw;
-    bottom: 33vh;
-  }
-  0% {
-    left: 19vw;
-    bottom: 40vh;
-  }
-}
-
-@keyframes rotate19 {
-  100% {
-    left: 19vw;
-    bottom: 40vh;
-  }
-  75% {
-    left: 33vw;
-    bottom: 24vh;
-  }
-  50% {
-    left: 12vw;
-    bottom: 24vh;
-  }
-  25% {
-    left: 26vw;
-    bottom: 33vh;
-  }
-  0% {
-    left: 19vw;
-    bottom: 40vh;
-  }
-}
-@-webkit-keyframes boxRotate19 {
-  100% {
-    left: 16vw;
-    bottom: 40vh;
-  }
-  75% {
-    left: 30vw;
-    bottom: 24vh;
-  }
-  50% {
-    left: 9vw;
-    bottom: 24vh;
-  }
-  25% {
-    left: 23vw;
-    bottom: 33vh;
-  }
-  0% {
-    left: 16vw;
-    bottom: 40vh;
-  }
-}
-@keyframes boxRotate19 {
-  100% {
-    left: 16vw;
-    bottom: 40vh;
-  }
-  75% {
-    left: 30vw;
-    bottom: 24vh;
-  }
-  50% {
-    left: 9vw;
-    bottom: 24vh;
-  }
-  25% {
-    left: 23vw;
-    bottom: 33vh;
-  }
-  0% {
-    left: 16vw;
-    bottom: 40vh;
-  }
-}
-.bird20 {
-  left: 71vw;
-  bottom: 48vh;
-  -webkit-animation: rotate20 51s linear infinite;
-          animation: rotate20 51s linear infinite;
-}
-
-.box20 {
-  bottom: 48vh;
-  left: 68vw;
-  -webkit-animation: boxRotate20 51s linear infinite;
-          animation: boxRotate20 51s linear infinite;
-}
-
-@-webkit-keyframes rotate20 {
-  100% {
-    left: 71vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 56vw;
-    bottom: 55vh;
-  }
-  50% {
-    left: 77vw;
-    bottom: 55vh;
-  }
-  25% {
-    left: 80vw;
-    bottom: 54vh;
-  }
-  0% {
-    left: 71vw;
-    bottom: 48vh;
-  }
-}
-
-@keyframes rotate20 {
-  100% {
-    left: 71vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 56vw;
-    bottom: 55vh;
-  }
-  50% {
-    left: 77vw;
-    bottom: 55vh;
-  }
-  25% {
-    left: 80vw;
-    bottom: 54vh;
-  }
-  0% {
-    left: 71vw;
-    bottom: 48vh;
-  }
-}
-@-webkit-keyframes boxRotate20 {
-  100% {
-    left: 68vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 53vw;
-    bottom: 55vh;
-  }
-  50% {
-    left: 74vw;
-    bottom: 55vh;
-  }
-  25% {
-    left: 77vw;
-    bottom: 54vh;
-  }
-  0% {
-    left: 68vw;
-    bottom: 48vh;
-  }
-}
-@keyframes boxRotate20 {
-  100% {
-    left: 68vw;
-    bottom: 48vh;
-  }
-  75% {
-    left: 53vw;
-    bottom: 55vh;
-  }
-  50% {
-    left: 74vw;
-    bottom: 55vh;
-  }
-  25% {
-    left: 77vw;
-    bottom: 54vh;
-  }
-  0% {
-    left: 68vw;
-    bottom: 48vh;
   }
 }/*# sourceMappingURL=assets.css.map */

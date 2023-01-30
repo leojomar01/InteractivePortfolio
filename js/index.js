@@ -6,18 +6,29 @@ const path = document.querySelector('.path');
 const cloud = document.querySelector('.cloud');
 const model = document.querySelector('.model');
 
+
+
+
 window.setInterval(() => {
     cloud.scrollLeft +=1;
 }, 500);
 
-
+model.addEventListener('click',()=>{
+    model.classList.remove('idle');
+    model.classList.add('meowning');
+    window.setTimeout(()=>{
+        model.classList.remove('meowning');
+        model.classList.add('idle');
+    },1200)
+})
 
 //get idle mode
 var timer = null;
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', ()=> {
     if(timer !== null) {
         clearTimeout(timer);  
-        model.classList.remove('idle');      
+        model.classList.remove('idle');     
+        model.classList.remove('meowning');
         model.classList.add('walking');      
     }
     timer = setTimeout(function() {
@@ -27,21 +38,19 @@ window.addEventListener('scroll', function() {
 }, false);
 
 // Adding scroll event listener
-document.addEventListener('scroll', horizontalScroll);
-
-function horizontalScroll(){
+document.addEventListener('scroll', function horizontalScroll(){
 
         let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        path.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.2;
+        path.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3;//waling speed
         var loc = path.scrollLeft;
 
         building1.scrollLeft = loc ;
         building2.scrollLeft = loc / 2;
         building3.scrollLeft = loc / 4;
       
-    }
+    })
     
-    //
+    //changing the direction depends on scroll
     window.onscroll = function(e) {
       if(this.oldScroll < this.scrollY){
         console.log("right");
@@ -91,10 +100,12 @@ function horizontalScroll(){
     }
 
 
-
+//selecting elements for nightmode
 let nightModeSwitch = document.querySelector('.nightModeSwitch');
 let switchIcon = document.querySelector('.switchIcon')
 var nightMode = true;
+
+//nightmode event listener
 nightModeSwitch.addEventListener("click",function(){
 
     switch(nightMode){

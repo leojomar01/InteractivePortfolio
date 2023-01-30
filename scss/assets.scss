@@ -1,0 +1,188 @@
+$birdSize:5rem;
+$boxSize:5vw;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.frame{
+    width: 90vw;
+    height: 80vh;
+    margin: 0 5vw;
+}
+.container{
+    height: 10100vh;
+    position: absolute;
+    top:0;
+
+    .birdAssets{
+        position: sticky;
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+        z-index: 49;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .birds{
+            width: 10000vw;
+
+            .bird{
+                background-image: url('../images/bird.gif');
+                background-size: $birdSize auto;
+                width: $birdSize;
+                height: $birdSize;
+                position: absolute;
+            }
+    
+            .box{
+                background-repeat: no-repeat;
+                background-size: auto $boxSize;
+                width: $boxSize+$boxSize;
+                height: $boxSize;
+                position: absolute;
+            }
+        }
+    }
+}
+
+
+
+
+// birds and flag positioning 
+$flags:'css','html','js', 'laravel','reactJS','sass','php';
+$i:1;
+@each $flag in $flags{
+
+    $bottom:(6vh*random(10)- random(7) + random(10)+20);
+    $left:(8vw * random(10))- random(5) +random(4) + 5 + 200vw;
+    $duration: random(50)+40s;
+    .bird#{$i}{
+        left: $left;
+        bottom: $bottom;
+        animation: rotate#{$i} $duration linear infinite;
+    }
+    .box#{$i}{
+        bottom: $bottom;
+        left: $left;
+        animation: boxRotate#{$i} $duration linear infinite;
+        background-image: url('../images/flags/#{$flag}.gif');
+    }
+
+    $loc1: random(30)-15;
+    $loc2: random(30)-15;
+    $loc3: random(30)-15;
+    $loc4: random(30)-15;
+
+    @keyframes rotate#{$i} {
+        100% {
+            left:$left;
+            bottom: $bottom;
+        }
+        75% {
+            left: $left + $loc1;
+            bottom: $bottom + $loc2;
+        }
+        50% {
+            left:$left + $loc3;
+            bottom: $bottom + $loc2;
+        }
+        25% {
+            left:$left + $loc4;
+            bottom: $bottom + $loc3;
+        }
+        0% {
+            left:$left;
+            bottom: $bottom;
+        }
+    }
+
+    @keyframes boxRotate#{$i} {
+        100% {
+            left:$left - 7.5vw;
+            bottom: $bottom;
+        }
+        75% {
+            left: $left - 7.5vw + $loc1;
+            bottom: $bottom + $loc2;
+        }
+        50% {
+            left:$left - 7.5vw + $loc3;
+            bottom: $bottom + $loc2;
+        }
+        25% {
+            left:$left - 7.5vw + $loc4;
+            bottom: $bottom + $loc3;
+        }
+        0% {
+            left:$left - 7.5vw;
+            bottom: $bottom;
+        }
+    }
+   $i: $i+ 1;
+}
+
+
+
+// blimp css
+.container{
+    .blimpAssets{
+        position: sticky;
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+        z-index: 9;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+
+        .content{
+            width: 10000vw;
+
+            .blimp{
+                background-repeat: no-repeat;
+                background-size: auto $boxSize*2;
+                width: $boxSize* 6;
+                height: $boxSize* 2;
+                position: absolute;
+                animation: blimpMovement 100s linear infinite;
+                background-image: url('/images/blimp.png');
+                // border: 1px solid red;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                p{
+                    font-size: 9vh;
+                    color: wheat;
+                    text-shadow: 2px 3px black;
+
+                }
+            }
+        }
+    }
+}
+
+@keyframes blimpMovement {
+    100% {
+        left:190vw;
+        bottom: 75vh;
+    }
+    50% {
+        left:188vw;
+        bottom: 70vh;
+    }
+    0% {
+        left:190vw;
+        bottom: 75vh;
+    }
+}
+
+
