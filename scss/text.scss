@@ -1,0 +1,49 @@
+.textBox{
+    background-image: url('../images/messageBox.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 5vh;
+    text-align: center;
+    color: white;
+    text-shadow: 1vh .5vh black;
+}
+
+
+.text {
+    z-index: 99;
+}
+.welcome{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+
+    .intro{
+        margin-bottom: 20vh;
+        .name{
+            font-size: 10vh;
+        }
+        p{
+            font-size: 5vh;
+
+            a{
+                color: white;
+            }
+        }
+    }
+}
+.about{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    left: 150vw;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}

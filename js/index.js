@@ -1,3 +1,7 @@
+let time = new Date().getHours();
+
+
+
 const building1 = document.querySelector('.building1');
 const building2 = document.querySelector('.building2');
 const building3 = document.querySelector('.building3');
@@ -103,11 +107,36 @@ document.addEventListener('scroll', function horizontalScroll(){
 //selecting elements for nightmode
 let nightModeSwitch = document.querySelector('.nightModeSwitch');
 let switchIcon = document.querySelector('.switchIcon')
-var nightMode = true;
+var nightMode;
+
+
+
+window.addEventListener('load',function(){
+    if(time>18 || time < 6){
+        nightMode = true;
+        getNightMode();
+    }
+
+    else{
+        nightMode = false;
+        getNightMode();
+    }
+});
 
 //nightmode event listener
 nightModeSwitch.addEventListener("click",function(){
+    if(nightMode==true){
+        nightMode= false;
+        getNightMode()
+    }
+    else{
+        nightMode = true;
+        getNightMode()
+    }
+});
 
+function getNightMode(){
+    
     switch(nightMode){
         case true:
             switchIcon.classList.remove('fa-sun','sun');
@@ -116,7 +145,6 @@ nightModeSwitch.addEventListener("click",function(){
             sky.classList.add('bgNight');
             cloud.classList.remove('cloudMorning');
             cloud.classList.add('cloudNight');
-            nightMode = false;
             break;
         case false:
             switchIcon.classList.remove('fa-moon','moon'); 
@@ -125,10 +153,9 @@ nightModeSwitch.addEventListener("click",function(){
             sky.classList.add('bgMorning');
             cloud.classList.add('cloudMorning');
             cloud.classList.remove('cloudNight');
-            nightMode = true;
             break;
     }
-});
+};
 
 
 

@@ -5,11 +5,8 @@ $boxSize:5vw;
     padding: 0;
     margin: 0;
 }
-.frame{
-    width: 90vw;
-    height: 80vh;
-    margin: 0 5vw;
-}
+
+
 .container{
     height: 10100vh;
     position: absolute;
@@ -145,6 +142,8 @@ $i:1;
         .content{
             width: 10000vw;
 
+
+            
             .blimp{
                 background-repeat: no-repeat;
                 background-size: auto $boxSize*2;
@@ -152,7 +151,7 @@ $i:1;
                 height: $boxSize* 2;
                 position: absolute;
                 animation: blimpMovement 100s linear infinite;
-                background-image: url('/images/blimp.png');
+                background-image: url('../images/blimp.png');
                 // border: 1px solid red;
                 
                 display: flex;

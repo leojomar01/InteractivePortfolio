@@ -26,7 +26,7 @@
         birds.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3 + (birdDistanceMoved);//walking speed
         blimpAssets.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3 ;
         birdDistance = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3;//get the distance when scrolled
-        //trigger automatic moving when reach the distance
+        //automatic moving when reach the distance
         if(birds.scrollLeft >= 2000){
             moving=true;
         }
