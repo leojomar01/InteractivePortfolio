@@ -50,7 +50,7 @@ $boxSize:5vw;
 
 
 // birds and flag positioning 
-$flags:'css','html','js', 'laravel','reactJS','sass','php';
+$flags:'css','html','js', 'laravel','reactJS','sass','php','mysql';
 $i:1;
 @each $flag in $flags{
 
@@ -152,17 +152,15 @@ $i:1;
                 position: absolute;
                 animation: blimpMovement 100s linear infinite;
                 background-image: url('../images/blimp.png');
-                // border: 1px solid red;
-                
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                // border: 1px solid red;
                 p{
                     font-size: 9vh;
                     color: wheat;
                     text-shadow: 2px 3px black;
-
                 }
             }
         }

@@ -34,11 +34,31 @@
   color: white;
 }
 
+.instruction {
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+  text-align: center;
+  color: white;
+  text-shadow: 1vh 0.5vh black;
+  font-size: 5vh;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 .about {
   width: 100vw;
   height: 100vh;
   display: grid;
-  left: 150vw;
+  left: 100vw;
   gap: 0;
   justify-content: center;
   align-items: center;

@@ -39,731 +39,835 @@
 }
 
 .bird1 {
-  left: 282vw;
-  bottom: 27vh;
-  -webkit-animation: rotate1 42s linear infinite;
-          animation: rotate1 42s linear infinite;
+  left: 237vw;
+  bottom: 77vh;
+  -webkit-animation: rotate1 90s linear infinite;
+          animation: rotate1 90s linear infinite;
 }
 
 .box1 {
-  bottom: 27vh;
-  left: 282vw;
-  -webkit-animation: boxRotate1 42s linear infinite;
-          animation: boxRotate1 42s linear infinite;
+  bottom: 77vh;
+  left: 237vw;
+  -webkit-animation: boxRotate1 90s linear infinite;
+          animation: boxRotate1 90s linear infinite;
   background-image: url("../images/flags/css.gif");
 }
 
 @-webkit-keyframes rotate1 {
   100% {
-    left: 282vw;
-    bottom: 27vh;
+    left: 237vw;
+    bottom: 77vh;
   }
   75% {
-    left: 272vw;
-    bottom: 20vh;
+    left: 252vw;
+    bottom: 88vh;
   }
   50% {
-    left: 279vw;
-    bottom: 20vh;
+    left: 237vw;
+    bottom: 88vh;
   }
   25% {
-    left: 274vw;
-    bottom: 24vh;
+    left: 245vw;
+    bottom: 77vh;
   }
   0% {
-    left: 282vw;
-    bottom: 27vh;
+    left: 237vw;
+    bottom: 77vh;
   }
 }
 
 @keyframes rotate1 {
   100% {
-    left: 282vw;
-    bottom: 27vh;
+    left: 237vw;
+    bottom: 77vh;
   }
   75% {
-    left: 272vw;
-    bottom: 20vh;
+    left: 252vw;
+    bottom: 88vh;
   }
   50% {
-    left: 279vw;
-    bottom: 20vh;
+    left: 237vw;
+    bottom: 88vh;
   }
   25% {
-    left: 274vw;
-    bottom: 24vh;
+    left: 245vw;
+    bottom: 77vh;
   }
   0% {
-    left: 282vw;
-    bottom: 27vh;
+    left: 237vw;
+    bottom: 77vh;
   }
 }
 @-webkit-keyframes boxRotate1 {
   100% {
-    left: 274.5vw;
-    bottom: 27vh;
+    left: 229.5vw;
+    bottom: 77vh;
   }
   75% {
-    left: 264.5vw;
-    bottom: 20vh;
+    left: 244.5vw;
+    bottom: 88vh;
   }
   50% {
-    left: 271.5vw;
-    bottom: 20vh;
+    left: 229.5vw;
+    bottom: 88vh;
   }
   25% {
-    left: 266.5vw;
-    bottom: 24vh;
+    left: 237.5vw;
+    bottom: 77vh;
   }
   0% {
-    left: 274.5vw;
-    bottom: 27vh;
+    left: 229.5vw;
+    bottom: 77vh;
   }
 }
 @keyframes boxRotate1 {
   100% {
-    left: 274.5vw;
-    bottom: 27vh;
+    left: 229.5vw;
+    bottom: 77vh;
   }
   75% {
-    left: 264.5vw;
-    bottom: 20vh;
+    left: 244.5vw;
+    bottom: 88vh;
   }
   50% {
-    left: 271.5vw;
-    bottom: 20vh;
+    left: 229.5vw;
+    bottom: 88vh;
   }
   25% {
-    left: 266.5vw;
-    bottom: 24vh;
+    left: 237.5vw;
+    bottom: 77vh;
   }
   0% {
-    left: 274.5vw;
-    bottom: 27vh;
+    left: 229.5vw;
+    bottom: 77vh;
   }
 }
 .bird2 {
-  left: 227vw;
-  bottom: 77vh;
-  -webkit-animation: rotate2 85s linear infinite;
-          animation: rotate2 85s linear infinite;
+  left: 212vw;
+  bottom: 78vh;
+  -webkit-animation: rotate2 88s linear infinite;
+          animation: rotate2 88s linear infinite;
 }
 
 .box2 {
-  bottom: 77vh;
-  left: 227vw;
-  -webkit-animation: boxRotate2 85s linear infinite;
-          animation: boxRotate2 85s linear infinite;
+  bottom: 78vh;
+  left: 212vw;
+  -webkit-animation: boxRotate2 88s linear infinite;
+          animation: boxRotate2 88s linear infinite;
   background-image: url("../images/flags/html.gif");
 }
 
 @-webkit-keyframes rotate2 {
   100% {
-    left: 227vw;
-    bottom: 77vh;
+    left: 212vw;
+    bottom: 78vh;
   }
   75% {
-    left: 225vw;
-    bottom: 68vh;
+    left: 222vw;
+    bottom: 92vh;
   }
   50% {
-    left: 215vw;
-    bottom: 68vh;
+    left: 202vw;
+    bottom: 92vh;
   }
   25% {
-    left: 217vw;
-    bottom: 65vh;
+    left: 220vw;
+    bottom: 68vh;
   }
   0% {
-    left: 227vw;
-    bottom: 77vh;
+    left: 212vw;
+    bottom: 78vh;
   }
 }
 
 @keyframes rotate2 {
   100% {
-    left: 227vw;
-    bottom: 77vh;
+    left: 212vw;
+    bottom: 78vh;
   }
   75% {
-    left: 225vw;
-    bottom: 68vh;
+    left: 222vw;
+    bottom: 92vh;
   }
   50% {
-    left: 215vw;
-    bottom: 68vh;
+    left: 202vw;
+    bottom: 92vh;
   }
   25% {
-    left: 217vw;
-    bottom: 65vh;
+    left: 220vw;
+    bottom: 68vh;
   }
   0% {
-    left: 227vw;
-    bottom: 77vh;
+    left: 212vw;
+    bottom: 78vh;
   }
 }
 @-webkit-keyframes boxRotate2 {
   100% {
-    left: 219.5vw;
-    bottom: 77vh;
+    left: 204.5vw;
+    bottom: 78vh;
   }
   75% {
-    left: 217.5vw;
-    bottom: 68vh;
+    left: 214.5vw;
+    bottom: 92vh;
   }
   50% {
-    left: 207.5vw;
-    bottom: 68vh;
+    left: 194.5vw;
+    bottom: 92vh;
   }
   25% {
-    left: 209.5vw;
-    bottom: 65vh;
+    left: 212.5vw;
+    bottom: 68vh;
   }
   0% {
-    left: 219.5vw;
-    bottom: 77vh;
+    left: 204.5vw;
+    bottom: 78vh;
   }
 }
 @keyframes boxRotate2 {
   100% {
-    left: 219.5vw;
-    bottom: 77vh;
+    left: 204.5vw;
+    bottom: 78vh;
   }
   75% {
-    left: 217.5vw;
-    bottom: 68vh;
+    left: 214.5vw;
+    bottom: 92vh;
   }
   50% {
-    left: 207.5vw;
-    bottom: 68vh;
+    left: 194.5vw;
+    bottom: 92vh;
   }
   25% {
-    left: 209.5vw;
-    bottom: 65vh;
+    left: 212.5vw;
+    bottom: 68vh;
   }
   0% {
-    left: 219.5vw;
-    bottom: 77vh;
+    left: 204.5vw;
+    bottom: 78vh;
   }
 }
 .bird3 {
-  left: 243vw;
-  bottom: 56vh;
-  -webkit-animation: rotate3 52s linear infinite;
-          animation: rotate3 52s linear infinite;
+  left: 211vw;
+  bottom: 65vh;
+  -webkit-animation: rotate3 49s linear infinite;
+          animation: rotate3 49s linear infinite;
 }
 
 .box3 {
-  bottom: 56vh;
-  left: 243vw;
-  -webkit-animation: boxRotate3 52s linear infinite;
-          animation: boxRotate3 52s linear infinite;
+  bottom: 65vh;
+  left: 211vw;
+  -webkit-animation: boxRotate3 49s linear infinite;
+          animation: boxRotate3 49s linear infinite;
   background-image: url("../images/flags/js.gif");
 }
 
 @-webkit-keyframes rotate3 {
   100% {
-    left: 243vw;
-    bottom: 56vh;
+    left: 211vw;
+    bottom: 65vh;
   }
   75% {
-    left: 250vw;
-    bottom: 63vh;
+    left: 220vw;
+    bottom: 65vh;
   }
   50% {
-    left: 238vw;
-    bottom: 63vh;
+    left: 224vw;
+    bottom: 65vh;
   }
   25% {
-    left: 237vw;
-    bottom: 51vh;
+    left: 206vw;
+    bottom: 78vh;
   }
   0% {
-    left: 243vw;
-    bottom: 56vh;
+    left: 211vw;
+    bottom: 65vh;
   }
 }
 
 @keyframes rotate3 {
   100% {
-    left: 243vw;
-    bottom: 56vh;
+    left: 211vw;
+    bottom: 65vh;
   }
   75% {
-    left: 250vw;
-    bottom: 63vh;
+    left: 220vw;
+    bottom: 65vh;
   }
   50% {
-    left: 238vw;
-    bottom: 63vh;
+    left: 224vw;
+    bottom: 65vh;
   }
   25% {
-    left: 237vw;
-    bottom: 51vh;
+    left: 206vw;
+    bottom: 78vh;
   }
   0% {
-    left: 243vw;
-    bottom: 56vh;
+    left: 211vw;
+    bottom: 65vh;
   }
 }
 @-webkit-keyframes boxRotate3 {
   100% {
-    left: 235.5vw;
-    bottom: 56vh;
+    left: 203.5vw;
+    bottom: 65vh;
   }
   75% {
-    left: 242.5vw;
-    bottom: 63vh;
+    left: 212.5vw;
+    bottom: 65vh;
   }
   50% {
-    left: 230.5vw;
-    bottom: 63vh;
+    left: 216.5vw;
+    bottom: 65vh;
   }
   25% {
-    left: 229.5vw;
-    bottom: 51vh;
+    left: 198.5vw;
+    bottom: 78vh;
   }
   0% {
-    left: 235.5vw;
-    bottom: 56vh;
+    left: 203.5vw;
+    bottom: 65vh;
   }
 }
 @keyframes boxRotate3 {
   100% {
-    left: 235.5vw;
-    bottom: 56vh;
+    left: 203.5vw;
+    bottom: 65vh;
   }
   75% {
-    left: 242.5vw;
-    bottom: 63vh;
+    left: 212.5vw;
+    bottom: 65vh;
   }
   50% {
-    left: 230.5vw;
-    bottom: 63vh;
+    left: 216.5vw;
+    bottom: 65vh;
   }
   25% {
-    left: 229.5vw;
-    bottom: 51vh;
+    left: 198.5vw;
+    bottom: 78vh;
   }
   0% {
-    left: 235.5vw;
-    bottom: 56vh;
+    left: 203.5vw;
+    bottom: 65vh;
   }
 }
 .bird4 {
-  left: 214vw;
-  bottom: 54vh;
-  -webkit-animation: rotate4 85s linear infinite;
-          animation: rotate4 85s linear infinite;
+  left: 232vw;
+  bottom: 67vh;
+  -webkit-animation: rotate4 59s linear infinite;
+          animation: rotate4 59s linear infinite;
 }
 
 .box4 {
-  bottom: 54vh;
-  left: 214vw;
-  -webkit-animation: boxRotate4 85s linear infinite;
-          animation: boxRotate4 85s linear infinite;
+  bottom: 67vh;
+  left: 232vw;
+  -webkit-animation: boxRotate4 59s linear infinite;
+          animation: boxRotate4 59s linear infinite;
   background-image: url("../images/flags/laravel.gif");
 }
 
 @-webkit-keyframes rotate4 {
   100% {
-    left: 214vw;
-    bottom: 54vh;
+    left: 232vw;
+    bottom: 67vh;
   }
   75% {
-    left: 220vw;
-    bottom: 51vh;
+    left: 219vw;
+    bottom: 79vh;
   }
   50% {
-    left: 223vw;
-    bottom: 51vh;
+    left: 236vw;
+    bottom: 79vh;
   }
   25% {
-    left: 205vw;
-    bottom: 63vh;
+    left: 221vw;
+    bottom: 71vh;
   }
   0% {
-    left: 214vw;
-    bottom: 54vh;
+    left: 232vw;
+    bottom: 67vh;
   }
 }
 
 @keyframes rotate4 {
   100% {
-    left: 214vw;
-    bottom: 54vh;
+    left: 232vw;
+    bottom: 67vh;
   }
   75% {
-    left: 220vw;
-    bottom: 51vh;
+    left: 219vw;
+    bottom: 79vh;
   }
   50% {
-    left: 223vw;
-    bottom: 51vh;
+    left: 236vw;
+    bottom: 79vh;
   }
   25% {
-    left: 205vw;
-    bottom: 63vh;
+    left: 221vw;
+    bottom: 71vh;
   }
   0% {
-    left: 214vw;
-    bottom: 54vh;
+    left: 232vw;
+    bottom: 67vh;
   }
 }
 @-webkit-keyframes boxRotate4 {
   100% {
-    left: 206.5vw;
-    bottom: 54vh;
+    left: 224.5vw;
+    bottom: 67vh;
   }
   75% {
-    left: 212.5vw;
-    bottom: 51vh;
+    left: 211.5vw;
+    bottom: 79vh;
   }
   50% {
-    left: 215.5vw;
-    bottom: 51vh;
+    left: 228.5vw;
+    bottom: 79vh;
   }
   25% {
-    left: 197.5vw;
-    bottom: 63vh;
+    left: 213.5vw;
+    bottom: 71vh;
   }
   0% {
-    left: 206.5vw;
-    bottom: 54vh;
+    left: 224.5vw;
+    bottom: 67vh;
   }
 }
 @keyframes boxRotate4 {
   100% {
-    left: 206.5vw;
-    bottom: 54vh;
+    left: 224.5vw;
+    bottom: 67vh;
   }
   75% {
-    left: 212.5vw;
-    bottom: 51vh;
+    left: 211.5vw;
+    bottom: 79vh;
   }
   50% {
-    left: 215.5vw;
-    bottom: 51vh;
+    left: 228.5vw;
+    bottom: 79vh;
   }
   25% {
-    left: 197.5vw;
-    bottom: 63vh;
+    left: 213.5vw;
+    bottom: 71vh;
   }
   0% {
-    left: 206.5vw;
-    bottom: 54vh;
+    left: 224.5vw;
+    bottom: 67vh;
   }
 }
 .bird5 {
-  left: 258vw;
-  bottom: 51vh;
-  -webkit-animation: rotate5 90s linear infinite;
-          animation: rotate5 90s linear infinite;
+  left: 262vw;
+  bottom: 86vh;
+  -webkit-animation: rotate5 51s linear infinite;
+          animation: rotate5 51s linear infinite;
 }
 
 .box5 {
-  bottom: 51vh;
-  left: 258vw;
-  -webkit-animation: boxRotate5 90s linear infinite;
-          animation: boxRotate5 90s linear infinite;
+  bottom: 86vh;
+  left: 262vw;
+  -webkit-animation: boxRotate5 51s linear infinite;
+          animation: boxRotate5 51s linear infinite;
   background-image: url("../images/flags/reactJS.gif");
 }
 
 @-webkit-keyframes rotate5 {
   100% {
-    left: 258vw;
-    bottom: 51vh;
+    left: 262vw;
+    bottom: 86vh;
   }
   75% {
-    left: 267vw;
-    bottom: 61vh;
+    left: 273vw;
+    bottom: 95vh;
   }
   50% {
-    left: 253vw;
-    bottom: 61vh;
+    left: 273vw;
+    bottom: 95vh;
   }
   25% {
-    left: 264vw;
-    bottom: 46vh;
+    left: 256vw;
+    bottom: 97vh;
   }
   0% {
-    left: 258vw;
-    bottom: 51vh;
+    left: 262vw;
+    bottom: 86vh;
   }
 }
 
 @keyframes rotate5 {
   100% {
-    left: 258vw;
-    bottom: 51vh;
+    left: 262vw;
+    bottom: 86vh;
   }
   75% {
-    left: 267vw;
-    bottom: 61vh;
+    left: 273vw;
+    bottom: 95vh;
   }
   50% {
-    left: 253vw;
-    bottom: 61vh;
+    left: 273vw;
+    bottom: 95vh;
   }
   25% {
-    left: 264vw;
-    bottom: 46vh;
+    left: 256vw;
+    bottom: 97vh;
   }
   0% {
-    left: 258vw;
-    bottom: 51vh;
+    left: 262vw;
+    bottom: 86vh;
   }
 }
 @-webkit-keyframes boxRotate5 {
   100% {
-    left: 250.5vw;
-    bottom: 51vh;
+    left: 254.5vw;
+    bottom: 86vh;
   }
   75% {
-    left: 259.5vw;
-    bottom: 61vh;
+    left: 265.5vw;
+    bottom: 95vh;
   }
   50% {
-    left: 245.5vw;
-    bottom: 61vh;
+    left: 265.5vw;
+    bottom: 95vh;
   }
   25% {
-    left: 256.5vw;
-    bottom: 46vh;
+    left: 248.5vw;
+    bottom: 97vh;
   }
   0% {
-    left: 250.5vw;
-    bottom: 51vh;
+    left: 254.5vw;
+    bottom: 86vh;
   }
 }
 @keyframes boxRotate5 {
   100% {
-    left: 250.5vw;
-    bottom: 51vh;
+    left: 254.5vw;
+    bottom: 86vh;
   }
   75% {
-    left: 259.5vw;
-    bottom: 61vh;
+    left: 265.5vw;
+    bottom: 95vh;
   }
   50% {
-    left: 245.5vw;
-    bottom: 61vh;
+    left: 265.5vw;
+    bottom: 95vh;
   }
   25% {
-    left: 256.5vw;
-    bottom: 46vh;
+    left: 248.5vw;
+    bottom: 97vh;
   }
   0% {
-    left: 250.5vw;
-    bottom: 51vh;
+    left: 254.5vw;
+    bottom: 86vh;
   }
 }
 .bird6 {
-  left: 257vw;
-  bottom: 36vh;
-  -webkit-animation: rotate6 67s linear infinite;
-          animation: rotate6 67s linear infinite;
+  left: 214vw;
+  bottom: 40vh;
+  -webkit-animation: rotate6 61s linear infinite;
+          animation: rotate6 61s linear infinite;
 }
 
 .box6 {
-  bottom: 36vh;
-  left: 257vw;
-  -webkit-animation: boxRotate6 67s linear infinite;
-          animation: boxRotate6 67s linear infinite;
+  bottom: 40vh;
+  left: 214vw;
+  -webkit-animation: boxRotate6 61s linear infinite;
+          animation: boxRotate6 61s linear infinite;
   background-image: url("../images/flags/sass.gif");
 }
 
 @-webkit-keyframes rotate6 {
   100% {
-    left: 257vw;
-    bottom: 36vh;
+    left: 214vw;
+    bottom: 40vh;
   }
   75% {
-    left: 265vw;
-    bottom: 31vh;
+    left: 229vw;
+    bottom: 45vh;
   }
   50% {
-    left: 248vw;
-    bottom: 31vh;
+    left: 204vw;
+    bottom: 45vh;
   }
   25% {
-    left: 261vw;
-    bottom: 27vh;
+    left: 206vw;
+    bottom: 30vh;
   }
   0% {
-    left: 257vw;
-    bottom: 36vh;
+    left: 214vw;
+    bottom: 40vh;
   }
 }
 
 @keyframes rotate6 {
   100% {
-    left: 257vw;
-    bottom: 36vh;
+    left: 214vw;
+    bottom: 40vh;
   }
   75% {
-    left: 265vw;
-    bottom: 31vh;
+    left: 229vw;
+    bottom: 45vh;
   }
   50% {
-    left: 248vw;
-    bottom: 31vh;
+    left: 204vw;
+    bottom: 45vh;
   }
   25% {
-    left: 261vw;
-    bottom: 27vh;
+    left: 206vw;
+    bottom: 30vh;
   }
   0% {
-    left: 257vw;
-    bottom: 36vh;
+    left: 214vw;
+    bottom: 40vh;
   }
 }
 @-webkit-keyframes boxRotate6 {
   100% {
-    left: 249.5vw;
-    bottom: 36vh;
+    left: 206.5vw;
+    bottom: 40vh;
   }
   75% {
-    left: 257.5vw;
-    bottom: 31vh;
+    left: 221.5vw;
+    bottom: 45vh;
   }
   50% {
-    left: 240.5vw;
-    bottom: 31vh;
+    left: 196.5vw;
+    bottom: 45vh;
   }
   25% {
-    left: 253.5vw;
-    bottom: 27vh;
+    left: 198.5vw;
+    bottom: 30vh;
   }
   0% {
-    left: 249.5vw;
-    bottom: 36vh;
+    left: 206.5vw;
+    bottom: 40vh;
   }
 }
 @keyframes boxRotate6 {
   100% {
-    left: 249.5vw;
-    bottom: 36vh;
+    left: 206.5vw;
+    bottom: 40vh;
   }
   75% {
-    left: 257.5vw;
-    bottom: 31vh;
+    left: 221.5vw;
+    bottom: 45vh;
   }
   50% {
-    left: 240.5vw;
-    bottom: 31vh;
+    left: 196.5vw;
+    bottom: 45vh;
   }
   25% {
-    left: 253.5vw;
-    bottom: 27vh;
+    left: 198.5vw;
+    bottom: 30vh;
   }
   0% {
-    left: 249.5vw;
-    bottom: 36vh;
+    left: 206.5vw;
+    bottom: 40vh;
   }
 }
 .bird7 {
-  left: 277vw;
-  bottom: 48vh;
-  -webkit-animation: rotate7 65s linear infinite;
-          animation: rotate7 65s linear infinite;
+  left: 211vw;
+  bottom: 61vh;
+  -webkit-animation: rotate7 70s linear infinite;
+          animation: rotate7 70s linear infinite;
 }
 
 .box7 {
-  bottom: 48vh;
-  left: 277vw;
-  -webkit-animation: boxRotate7 65s linear infinite;
-          animation: boxRotate7 65s linear infinite;
+  bottom: 61vh;
+  left: 211vw;
+  -webkit-animation: boxRotate7 70s linear infinite;
+          animation: boxRotate7 70s linear infinite;
   background-image: url("../images/flags/php.gif");
 }
 
 @-webkit-keyframes rotate7 {
   100% {
-    left: 277vw;
-    bottom: 48vh;
+    left: 211vw;
+    bottom: 61vh;
   }
   75% {
-    left: 289vw;
-    bottom: 51vh;
+    left: 225vw;
+    bottom: 65vh;
   }
   50% {
-    left: 267vw;
-    bottom: 51vh;
+    left: 223vw;
+    bottom: 65vh;
   }
   25% {
-    left: 290vw;
-    bottom: 38vh;
+    left: 199vw;
+    bottom: 73vh;
   }
   0% {
-    left: 277vw;
-    bottom: 48vh;
+    left: 211vw;
+    bottom: 61vh;
   }
 }
 
 @keyframes rotate7 {
   100% {
-    left: 277vw;
-    bottom: 48vh;
+    left: 211vw;
+    bottom: 61vh;
   }
   75% {
-    left: 289vw;
-    bottom: 51vh;
+    left: 225vw;
+    bottom: 65vh;
   }
   50% {
-    left: 267vw;
-    bottom: 51vh;
+    left: 223vw;
+    bottom: 65vh;
   }
   25% {
-    left: 290vw;
-    bottom: 38vh;
+    left: 199vw;
+    bottom: 73vh;
   }
   0% {
-    left: 277vw;
-    bottom: 48vh;
+    left: 211vw;
+    bottom: 61vh;
   }
 }
 @-webkit-keyframes boxRotate7 {
   100% {
-    left: 269.5vw;
-    bottom: 48vh;
+    left: 203.5vw;
+    bottom: 61vh;
   }
   75% {
-    left: 281.5vw;
-    bottom: 51vh;
+    left: 217.5vw;
+    bottom: 65vh;
   }
   50% {
-    left: 259.5vw;
-    bottom: 51vh;
+    left: 215.5vw;
+    bottom: 65vh;
   }
   25% {
-    left: 282.5vw;
-    bottom: 38vh;
+    left: 191.5vw;
+    bottom: 73vh;
   }
   0% {
-    left: 269.5vw;
-    bottom: 48vh;
+    left: 203.5vw;
+    bottom: 61vh;
   }
 }
 @keyframes boxRotate7 {
   100% {
-    left: 269.5vw;
-    bottom: 48vh;
+    left: 203.5vw;
+    bottom: 61vh;
   }
   75% {
-    left: 281.5vw;
-    bottom: 51vh;
+    left: 217.5vw;
+    bottom: 65vh;
   }
   50% {
-    left: 259.5vw;
-    bottom: 51vh;
+    left: 215.5vw;
+    bottom: 65vh;
   }
   25% {
-    left: 282.5vw;
-    bottom: 38vh;
+    left: 191.5vw;
+    bottom: 73vh;
   }
   0% {
-    left: 269.5vw;
-    bottom: 48vh;
+    left: 203.5vw;
+    bottom: 61vh;
+  }
+}
+.bird8 {
+  left: 258vw;
+  bottom: 29vh;
+  -webkit-animation: rotate8 62s linear infinite;
+          animation: rotate8 62s linear infinite;
+}
+
+.box8 {
+  bottom: 29vh;
+  left: 258vw;
+  -webkit-animation: boxRotate8 62s linear infinite;
+          animation: boxRotate8 62s linear infinite;
+  background-image: url("../images/flags/mysql.gif");
+}
+
+@-webkit-keyframes rotate8 {
+  100% {
+    left: 258vw;
+    bottom: 29vh;
+  }
+  75% {
+    left: 270vw;
+    bottom: 27vh;
+  }
+  50% {
+    left: 257vw;
+    bottom: 27vh;
+  }
+  25% {
+    left: 265vw;
+    bottom: 28vh;
+  }
+  0% {
+    left: 258vw;
+    bottom: 29vh;
+  }
+}
+
+@keyframes rotate8 {
+  100% {
+    left: 258vw;
+    bottom: 29vh;
+  }
+  75% {
+    left: 270vw;
+    bottom: 27vh;
+  }
+  50% {
+    left: 257vw;
+    bottom: 27vh;
+  }
+  25% {
+    left: 265vw;
+    bottom: 28vh;
+  }
+  0% {
+    left: 258vw;
+    bottom: 29vh;
+  }
+}
+@-webkit-keyframes boxRotate8 {
+  100% {
+    left: 250.5vw;
+    bottom: 29vh;
+  }
+  75% {
+    left: 262.5vw;
+    bottom: 27vh;
+  }
+  50% {
+    left: 249.5vw;
+    bottom: 27vh;
+  }
+  25% {
+    left: 257.5vw;
+    bottom: 28vh;
+  }
+  0% {
+    left: 250.5vw;
+    bottom: 29vh;
+  }
+}
+@keyframes boxRotate8 {
+  100% {
+    left: 250.5vw;
+    bottom: 29vh;
+  }
+  75% {
+    left: 262.5vw;
+    bottom: 27vh;
+  }
+  50% {
+    left: 249.5vw;
+    bottom: 27vh;
+  }
+  25% {
+    left: 257.5vw;
+    bottom: 28vh;
+  }
+  0% {
+    left: 250.5vw;
+    bottom: 29vh;
   }
 }
 .container .blimpAssets {

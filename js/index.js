@@ -1,7 +1,7 @@
 let time = new Date().getHours();
 
 
-
+const blimpAssets = document.querySelector('.blimpAssets');
 const building1 = document.querySelector('.building1');
 const building2 = document.querySelector('.building2');
 const building3 = document.querySelector('.building3');
@@ -9,14 +9,17 @@ const sky = document.querySelector('.sky');
 const path = document.querySelector('.path');
 const cloud = document.querySelector('.cloud');
 const model = document.querySelector('.model');
+const instruction = document.querySelector('.instruction');
 
 
 
-
+//cloud moving animation
 window.setInterval(() => {
     cloud.scrollLeft +=1;
 }, 500);
 
+
+// model event listiner on click
 model.addEventListener('click',()=>{
     model.classList.remove('idle');
     model.classList.add('meowning');
@@ -44,64 +47,40 @@ window.addEventListener('scroll', ()=> {
 // Adding scroll event listener
 document.addEventListener('scroll', function horizontalScroll(){
 
-        let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        path.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3;//waling speed
-        var loc = path.scrollLeft;
+    instruction.style.visibility = "hidden";
 
-        building1.scrollLeft = loc ;
-        building2.scrollLeft = loc / 2;
-        building3.scrollLeft = loc / 4;
+    let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+    path.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3;//waling speed
+    var loc = path.scrollLeft;
+    blimpAssets.scrollLeft = loc;
+    building1.scrollLeft = loc /1.5 ;
+    building2.scrollLeft = loc / 2;
+    building3.scrollLeft = loc / 4;
       
-    })
+})
     
-    //changing the direction depends on scroll
-    window.onscroll = function(e) {
-      if(this.oldScroll < this.scrollY){
-        console.log("right");
-        model.classList.remove('left');
-        model.classList.add('right');
-      }
-      else{
-        console.log("left");
-        model.classList.add('left');
-        model.classList.remove('right');
-      }
-      this.oldScroll = this.scrollY;
+//changing the direction depends on scroll
+window.onscroll = function(e) {
+    if(this.oldScroll < this.scrollY){
+    console.log("right");
+    model.classList.remove('left');
+    model.classList.add('right');
     }
-    
-    //Selecting Elements
-    let sticky = document.querySelector('.sticky');
-    let stickyParent = document.querySelector('.sticky-parent');
-    
-    let scrollWidth = sticky.scrollWidth;
-    let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
-    
-    
-    document.onkeydown = function(e) {
-        switch (e.keyCode) {
-            case 48:
-                path.scrollBy({
-                    top: 0,
-                    left: 500,
-                    behavior: 'smooth'
-                  });
-                  
-                  break;
-            case 37:
-                // alert('left');
-                break;
-            case 38:
-                // alert('up');
-                break;
-            case 39:
-                // alert('right');
-                
-                break;
-            case 40:
-                // alert('down');
-                break;
-        }
+    else{
+    console.log("left");
+    model.classList.add('left');
+    model.classList.remove('right');
     }
+    this.oldScroll = this.scrollY;
+}
+
+//Selecting Elements
+let sticky = document.querySelector('.sticky');
+let stickyParent = document.querySelector('.sticky-parent');
+
+let scrollWidth = sticky.scrollWidth;
+let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+
 
 
 //selecting elements for nightmode
@@ -110,7 +89,7 @@ let switchIcon = document.querySelector('.switchIcon')
 var nightMode;
 
 
-
+//get time for nightmode
 window.addEventListener('load',function(){
     if(time>18 || time < 6){
         nightMode = true;
