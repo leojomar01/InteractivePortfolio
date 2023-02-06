@@ -39,12 +39,26 @@
 
                 }
                 .instruction{
-                animation: blinker 1s linear infinite;
-                text-align: center;
-                color: white;
-                text-shadow: 1vh .5vh black;
-                font-size: 5vh;
+                    animation: blinker 1s linear infinite;
+                    text-align: center;
+                    color: white;
+                    text-shadow: 1vh .5vh black;
+                    font-size: 5vh;
+                }
             }
+
+            .about{
+                position: absolute;
+                left: calc(100vw + 300px) ;
+
+                .textBox{
+                    margin-top: 20vh;
+
+                    p{
+                        font-size: 5vh;
+                    }
+                   
+                }
             }
 
 
@@ -58,6 +72,11 @@
                     height: 50%;
                     margin: 8% 5%;
                     text-align: center;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid red;
+                    padding: 1rem;
                     p{
                         font-size: 5rem;
                         margin-bottom: 4rem;

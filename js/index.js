@@ -11,7 +11,7 @@ let path = document.querySelector('.path');
 let cloud = document.querySelector('.cloud');
 let model = document.querySelector('.model');
 let instruction = document.querySelector('.instruction');
-let speed = .6;
+let speed = .8;
 
 
 

@@ -23,9 +23,7 @@ $boxSize:5vw;
 
         .birds{
             width: 10000vw;
-
             .bird{
-                background-image: url('../images/bird.gif');
                 background-size: $birdSize auto;
                 width: $birdSize;
                 height: $birdSize;
@@ -51,9 +49,10 @@ $flags:'css','html','js', 'laravel','reactJS','sass','php','mysql';
 $i:1;
 @each $flag in $flags{
     $bottom:(6vh*random(10) + 20);
-    $left: calc((8vw * random(10)) + 100vw + 2200px);
+    $left: calc((7vw * random(10)) + 100vw + 2200px);
     $duration: random(50)+30s;
     .bird#{$i}{
+        background-image: url('../images/bird.gif');
         left: $left;
         bottom: $bottom;
         animation: rotate#{$i} $duration linear infinite;
@@ -113,6 +112,7 @@ $i:1;
     $left: calc((8vw * random(10)) + 100vw + 3700px);
     $duration: random(50)+30s;
     .bird2#{$i}{
+        background-image: url('../images/bird2.gif');
         left: $left;
         bottom: $bottom;
         animation: rotate2#{$i} $duration linear infinite;
@@ -185,7 +185,15 @@ $i:1;
             width: 2000vw;
 
 
-            
+            .skills{
+                left: 200vw;
+            }
+            .about{
+                left: 300vw;
+            }
+            .blimpProjects{
+                left: 7000px;
+            }
             .blimp{
                 background-repeat: no-repeat;
                 background-size: auto $boxSize*2;
@@ -211,15 +219,12 @@ $i:1;
 
 @keyframes blimpMovement {
     100% {
-        left:190vw;
         bottom: 75vh;
     }
     50% {
-        left:188vw;
         bottom: 70vh;
     }
     0% {
-        left:190vw;
         bottom: 75vh;
     }
 }

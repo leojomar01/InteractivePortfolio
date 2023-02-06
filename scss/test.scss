@@ -8,6 +8,6 @@
 
 @for $i from 1 through 3{
     .billBoardProject#{$i}{
-        left: calc(200vw + 500px * $i);
+        left: calc(7000px + 500px * $i);
     }
 }

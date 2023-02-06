@@ -6,13 +6,13 @@
 }
 
 .billBoardProject1 {
-  left: calc(200vw + 500px);
+  left: 7500px;
 }
 
 .billBoardProject2 {
-  left: calc(200vw + 1000px);
+  left: 8000px;
 }
 
 .billBoardProject3 {
-  left: calc(200vw + 1500px);
+  left: 8500px;
 }/*# sourceMappingURL=test.css.map */

@@ -40,6 +40,16 @@
   text-shadow: 1vh 0.5vh black;
   font-size: 5vh;
 }
+.text .assets .content .about {
+  position: absolute;
+  left: calc(100vw + 300px);
+}
+.text .assets .content .about .textBox {
+  margin-top: 20vh;
+}
+.text .assets .content .about .textBox p {
+  font-size: 5vh;
+}
 .text .assets .content .project {
   position: absolute;
   width: 30vw;
@@ -50,6 +60,11 @@
   height: 50%;
   margin: 8% 5%;
   text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  padding: 1rem;
 }
 .text .assets .content .project .title p {
   font-size: 5rem;
