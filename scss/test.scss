@@ -1,82 +1,13 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'8-bit_arcade_inmedium';
+
 }
 
-
-.sticky-parent{
-    height: 10000vh;
-
-
-    .dim{
-        min-width: 5000vw;
-        height: 120vh;
-        }
-}
-
-
-//---------------------------------------------------------
-.container{
-    height: 10100vh;
-    position: absolute;
-    top:0;
-
-    .planeSpl, .planeOts{
-        position: sticky;
-        top:0;
-        width: 100vw;
-        height: 100vh;
-        overflow: scroll;
-        z-index: 49;
-
-        &::-webkit-scrollbar{
-            display: none;
-        }
-        .planes{
-            width: 10000vw;
-
-            .plane, .box{
-                background-repeat: no-repeat;
-                background-size: auto 20vh;
-                width: 100vh;
-                height: 20vh;
-                position: absolute;
-                animation: planeFlying linear infinite 5s;
-            }
-            .boxSpl{
-                left: 229vw;
-                background-image: url('../images/spl.gif');
-            }
-            .boxOts{
-                left: 429vw;
-                background-image: url('../images/ots.gif');
-            }
-            .spl{
-                background-image: url('../images/plane.gif');
-                left: 220vw;
-            }
-            .ots{
-                background-image: url('../images/plane.gif');
-                left: 420vw;
-
-            }
-
-        }
-    }
-}
-
-
-@keyframes planeFlying{
-    100% {
-        bottom: 75vh;
-    }
-    75%{
-        bottom: 80vh;
-    }
-    25% {
-        bottom: 70vh;
-    }
-    0% {
-        bottom: 75vh;
+@for $i from 1 through 3{
+    .billBoardProject#{$i}{
+        left: calc(200vw + 500px * $i);
     }
 }

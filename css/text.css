@@ -11,8 +11,7 @@
 .text {
   z-index: 99;
 }
-
-.welcome {
+.text .assets .content .welcome {
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -21,26 +20,74 @@
   align-items: center;
   position: absolute;
 }
-.welcome .intro {
+.text .assets .content .welcome .intro {
   margin-bottom: 20vh;
 }
-.welcome .intro .name {
+.text .assets .content .welcome .intro .name {
   font-size: 10vh;
 }
-.welcome .intro p {
+.text .assets .content .welcome .intro p {
   font-size: 5vh;
 }
-.welcome .intro p a {
+.text .assets .content .welcome .intro p a {
   color: white;
 }
-
-.instruction {
+.text .assets .content .welcome .instruction {
   -webkit-animation: blinker 1s linear infinite;
           animation: blinker 1s linear infinite;
   text-align: center;
   color: white;
   text-shadow: 1vh 0.5vh black;
   font-size: 5vh;
+}
+.text .assets .content .project {
+  position: absolute;
+  width: 30vw;
+  height: 70vh;
+  top: 20vh;
+}
+.text .assets .content .project .title {
+  height: 50%;
+  margin: 8% 5%;
+  text-align: center;
+}
+.text .assets .content .project .title p {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  color: white;
+  text-shadow: 1vh 0.5vh black;
+}
+.text .assets .content .project .title a {
+  color: white;
+  text-shadow: 1vh 0.5vh black;
+  font-size: 2rem;
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+.container .billboardAssets {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100vw;
+  overflow: scroll;
+  top: 20vh;
+  z-index: 6;
+}
+.container .billboardAssets::-webkit-scrollbar {
+  display: none;
+}
+.container .billboardAssets .content {
+  width: 3000vw;
+}
+.container .billboardAssets .projects {
+  height: 100vh;
+}
+.container .billboardAssets .projects .billboard {
+  position: absolute;
+  width: 30vw;
+  height: 70vh;
+  background-image: url("../images/billboard.png");
+  background-size: 100% 100%;
 }
 
 @-webkit-keyframes blinker {
@@ -53,14 +100,4 @@
   50% {
     opacity: 0;
   }
-}
-.about {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  left: 100vw;
-  gap: 0;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
 }/*# sourceMappingURL=text.css.map */

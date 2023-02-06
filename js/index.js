@@ -1,22 +1,33 @@
 let time = new Date().getHours();
 
 
-const blimpAssets = document.querySelector('.blimpAssets');
-const building1 = document.querySelector('.building1');
-const building2 = document.querySelector('.building2');
-const building3 = document.querySelector('.building3');
-const sky = document.querySelector('.sky');
-const path = document.querySelector('.path');
-const cloud = document.querySelector('.cloud');
-const model = document.querySelector('.model');
-const instruction = document.querySelector('.instruction');
+let blimpAssets = document.querySelector('.blimpAssets');
+let billboardAssets = document.querySelector('.billboardAssets')
+let building1 = document.querySelector('.building1');
+let building2 = document.querySelector('.building2');
+let building3 = document.querySelector('.building3');
+let sky = document.querySelector('.sky');
+let path = document.querySelector('.path');
+let cloud = document.querySelector('.cloud');
+let model = document.querySelector('.model');
+let instruction = document.querySelector('.instruction');
+let speed = .6;
 
 
 
+var maxScrollLeft = path.scrollWidth - path.clientWidth;
+console.log(maxScrollLeft);
+
+
+let scrollLeftLoc = document.querySelector('.scrollLeft');
 //cloud moving animation
 window.setInterval(() => {
     cloud.scrollLeft +=1;
 }, 500);
+
+window.setInterval(() => {
+    scrollLeftLoc.innerHTML = path.scrollLeft;
+}, 5);
 
 
 // model event listiner on click
@@ -50,9 +61,10 @@ document.addEventListener('scroll', function horizontalScroll(){
     instruction.style.visibility = "hidden";
 
     let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-    path.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3;//waling speed
+    path.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*speed;//waling speed
     var loc = path.scrollLeft;
     blimpAssets.scrollLeft = loc;
+    billboardAssets.scrollLeft = loc;
     building1.scrollLeft = loc /1.5 ;
     building2.scrollLeft = loc / 2;
     building3.scrollLeft = loc / 4;

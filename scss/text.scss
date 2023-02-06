@@ -11,54 +11,108 @@
 
 .text {
     z-index: 99;
-}
-.welcome{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    .assets{
+        .content{
+            .welcome{
+                width: 100vw;
+                height: 100vh;
+                display: grid;
+                gap: 0;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
 
 
-    .intro{
-        margin-bottom: 20vh;
-        .name{
-            font-size: 10vh;
-        }
-        p{
-            font-size: 5vh;
+                .intro{
+                    margin-bottom: 20vh;
+                    .name{
+                        font-size: 10vh;
+                    }
+                    p{
+                        font-size: 5vh;
 
-            a{
+                        a{
+                            color: white;
+                        }
+                    }
+
+
+                }
+                .instruction{
+                animation: blinker 1s linear infinite;
+                text-align: center;
                 color: white;
+                text-shadow: 1vh .5vh black;
+                font-size: 5vh;
+            }
+            }
+
+
+            .project{
+                position: absolute;
+                width: 30vw;
+                height: 70vh;
+                top: 20vh;
+
+                .title{
+                    height: 50%;
+                    margin: 8% 5%;
+                    text-align: center;
+                    p{
+                        font-size: 5rem;
+                        margin-bottom: 4rem;
+                        color: white;
+                        text-shadow: 1vh .5vh black;
+                    }
+                    a{
+                        color: white;
+                        text-shadow: 1vh .5vh black;
+                        font-size: 2rem;
+                        animation: blinker 1s linear infinite;
+                    }
+                }
             }
         }
-
-       
     }
 }
-.instruction{
-    animation: blinker 1s linear infinite;
-    text-align: center;
-    color: white;
-    text-shadow: 1vh .5vh black;
-    font-size: 5vh;
+
+.container{
+
+    .billboardAssets{
+       position: sticky;
+       width: 100vw;
+       overflow: scroll;
+       top: 20vh;
+       z-index: 6;
+
+       &::-webkit-scrollbar{
+           display: none;
+       }
+
+       .content{
+           width: 3000vw;
+       }
+       .projects{
+           height: 100vh;
+
+           .billboard{
+               position: absolute;
+               width: 30vw;
+               height: 70vh;
+               background-image: url('../images/billboard.png');
+               background-size: 100% 100%;
+           }
+
+       }
+   }
 }
+
+
+
+
 
 @keyframes blinker {
     50% {
       opacity: 0;
     }
   }
-.about{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    left: 100vw;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    
-}

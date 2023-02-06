@@ -2,10 +2,13 @@
   padding: 0;
   margin: 0;
   font-family: "8-bit_arcade_inmedium";
+  box-sizing: border-box;
 }
 
 html {
   overflow-x: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .cover {
@@ -15,6 +18,16 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
+}
+
+.scrollLeft {
+  position: fixed;
+  top: 1vh;
+  left: 20vw;
+  font-size: 5rem;
+  z-index: 99;
+  border: 1px solid red;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .avatar {
@@ -79,9 +92,12 @@ html {
 
 .sticky-parent {
   height: 10000vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .sticky-parent .dim {
-  min-width: 5000vw;
+  min-width: 3000vw;
   height: 120vh;
 }
 
@@ -99,7 +115,7 @@ html {
   background-attachment: local;
 }
 .container .sky .content, .container .building1 .content, .container .building2 .content, .container .building3 .content, .container .cloud .content, .container .path .content {
-  width: 2000vw;
+  width: 3000vw;
 }
 .container .building1 {
   background-image: url("../images/building1.png");

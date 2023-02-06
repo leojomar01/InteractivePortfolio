@@ -8,11 +8,8 @@ $boxSize:5vw;
 
 
 .container{
-    height: 10100vh;
-    position: absolute;
-    top:0;
 
-    .birdAssets{
+    .birdAssets, .birdAssets2{
         position: sticky;
         top:0;
         width: 100vw;
@@ -53,10 +50,9 @@ $boxSize:5vw;
 $flags:'css','html','js', 'laravel','reactJS','sass','php','mysql';
 $i:1;
 @each $flag in $flags{
-
-    $bottom:(6vh*random(10)- random(7) + random(10)+20);
-    $left:(8vw * random(10))- random(5) +random(4) + 5 + 200vw;
-    $duration: random(50)+40s;
+    $bottom:(6vh*random(10) + 20);
+    $left: calc((8vw * random(10)) + 100vw + 2200px);
+    $duration: random(50)+30s;
     .bird#{$i}{
         left: $left;
         bottom: $bottom;
@@ -69,58 +65,104 @@ $i:1;
         background-image: url('../images/flags/#{$flag}.gif');
     }
 
-    $loc1: random(30)-15;
-    $loc2: random(30)-15;
-    $loc3: random(30)-15;
-    $loc4: random(30)-15;
+    $loc: random(40)-20vw;
+    $loc2: random(20)-5vh;
 
     @keyframes rotate#{$i} {
         100% {
             left:$left;
             bottom: $bottom;
         }
-        75% {
-            left: $left + $loc1;
-            bottom: $bottom + $loc2;
-        }
+      
         50% {
-            left:$left + $loc3;
-            bottom: $bottom + $loc2;
+            left:calc($left + $loc);
+            bottom: calc($bottom + $loc2);
         }
-        25% {
-            left:$left + $loc4;
-            bottom: $bottom + $loc3;
-        }
+       
         0% {
             left:$left;
-            bottom: $bottom;
+            bottom:$bottom;
         }
     }
 
     @keyframes boxRotate#{$i} {
         100% {
-            left:$left - 7.5vw;
+            left:calc($left - 7.5vw);
             bottom: $bottom;
         }
-        75% {
-            left: $left - 7.5vw + $loc1;
-            bottom: $bottom + $loc2;
-        }
+       
         50% {
-            left:$left - 7.5vw + $loc3;
-            bottom: $bottom + $loc2;
+            left:calc($left - 7.5vw + $loc);
+            bottom: calc($bottom + $loc2);
         }
-        25% {
-            left:$left - 7.5vw + $loc4;
-            bottom: $bottom + $loc3;
-        }
+       
         0% {
-            left:$left - 7.5vw;
+            left:calc($left - 7.5vw);
             bottom: $bottom;
         }
     }
    $i: $i+ 1;
 }
+
+
+// ----------------------------------------
+$flags2:'sb','laragon','ps', 'vscode','github';
+$i:1;
+@each $flag2 in $flags2{
+    $bottom:(6vh*random(10) + 20);
+    $left: calc((8vw * random(10)) + 100vw + 3700px);
+    $duration: random(50)+30s;
+    .bird2#{$i}{
+        left: $left;
+        bottom: $bottom;
+        animation: rotate2#{$i} $duration linear infinite;
+    }
+    .box2#{$i}{
+        bottom: $bottom;
+        left: $left;
+        animation: boxRotate2#{$i} $duration linear infinite;
+        background-image: url('../images/flags/#{$flag2}.gif');
+    }
+
+    $loc: random(40)-20vw;
+    $loc2: random(20)-5vh;
+
+    @keyframes rotate2#{$i} {
+        100% {
+            left:$left;
+            bottom: $bottom;
+        }
+      
+        50% {
+            left:calc($left + $loc);
+            bottom: calc($bottom + $loc2);
+        }
+       
+        0% {
+            left:$left;
+            bottom:$bottom;
+        }
+    }
+
+    @keyframes boxRotate2#{$i} {
+        100% {
+            left:calc($left - 7.5vw);
+            bottom: $bottom;
+        }
+       
+        50% {
+            left:calc($left - 7.5vw + $loc);
+            bottom: calc($bottom + $loc2);
+        }
+       
+        0% {
+            left:calc($left - 7.5vw);
+            bottom: $bottom;
+        }
+    }
+   $i: $i+ 1;
+}
+
 
 
 
@@ -140,7 +182,7 @@ $i:1;
 
 
         .content{
-            width: 10000vw;
+            width: 2000vw;
 
 
             

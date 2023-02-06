@@ -1,0 +1,70 @@
+.container .planeSpl, .container .planeOts {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 49;
+}
+.container .planeSpl::-webkit-scrollbar, .container .planeOts::-webkit-scrollbar {
+  display: none;
+}
+.container .planeSpl .planes, .container .planeOts .planes {
+  width: 20000vw;
+}
+.container .planeSpl .planes .plane, .container .planeSpl .planes .box, .container .planeOts .planes .plane, .container .planeOts .planes .box {
+  background-repeat: no-repeat;
+  background-size: auto 20vh;
+  width: 100vh;
+  height: 20vh;
+  position: absolute;
+  -webkit-animation: planeFlying linear infinite 5s;
+          animation: planeFlying linear infinite 5s;
+}
+.container .planeSpl .planes .boxSpl, .container .planeOts .planes .boxSpl {
+  left: calc(109vw + 2000px);
+  background-image: url("../images/spl.gif");
+}
+.container .planeSpl .planes .spl, .container .planeOts .planes .spl {
+  background-image: url("../images/plane.gif");
+  left: calc(2000px + 100vw);
+}
+.container .planeSpl .planes .boxOts, .container .planeOts .planes .boxOts {
+  left: calc(109vw + 3700px);
+  background-image: url("../images/ots.gif");
+}
+.container .planeSpl .planes .ots, .container .planeOts .planes .ots {
+  background-image: url("../images/plane.gif");
+  left: calc(100vw + 3700px);
+}
+
+@-webkit-keyframes planeFlying {
+  100% {
+    bottom: 75vh;
+  }
+  75% {
+    bottom: 80vh;
+  }
+  25% {
+    bottom: 70vh;
+  }
+  0% {
+    bottom: 75vh;
+  }
+}
+
+@keyframes planeFlying {
+  100% {
+    bottom: 75vh;
+  }
+  75% {
+    bottom: 80vh;
+  }
+  25% {
+    bottom: 70vh;
+  }
+  0% {
+    bottom: 75vh;
+  }
+}/*# sourceMappingURL=planes.css.map */

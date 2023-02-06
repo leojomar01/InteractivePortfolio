@@ -24,8 +24,8 @@
     // scrolling event listener
     document.addEventListener('scroll', function horizontalScroll(){
         let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        birds.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3 + (birdDistanceMoved);//walking speed
-        birdDistance = (scrollWidth/verticalScrollHeight)*(-scrolled)*.3;//get the distance when scrolled
+        birds.scrollLeft = (scrollWidth/verticalScrollHeight)*(-scrolled)*speed + (birdDistanceMoved);//walking speed
+        birdDistance = (scrollWidth/verticalScrollHeight)*(-scrolled)*speed;//get the distance when scrolled
         //automatic moving when reach the distance
         if(birds.scrollLeft >= 2000){
             moving=true;

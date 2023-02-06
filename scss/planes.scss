@@ -1,0 +1,64 @@
+
+//---------------------------------------------------------
+.container{
+
+    .planeSpl, .planeOts{
+        position: sticky;
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+        z-index: 49;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .planes{
+            width: 20000vw;
+
+            .plane, .box{
+                background-repeat: no-repeat;
+                background-size: auto 20vh;
+                width: 100vh;
+                height: 20vh;
+                position: absolute;
+                animation: planeFlying linear infinite 5s;
+            }
+            .boxSpl{
+                left: calc(109vw + 2000px);
+                background-image: url('../images/spl.gif');
+            }
+            .spl{
+                background-image: url('../images/plane.gif');
+                left: calc(2000px + 100vw);
+            }
+            .boxOts{
+                left: calc(109vw + 3700px);
+                background-image: url('../images/ots.gif');
+            }
+            
+            .ots{
+                background-image: url('../images/plane.gif');
+                left: calc(100vw + 3700px);
+
+            }
+
+        }
+    }
+}
+
+
+@keyframes planeFlying{
+    100% {
+        bottom: 75vh;
+    }
+    75%{
+        bottom: 80vh;
+    }
+    25% {
+        bottom: 70vh;
+    }
+    0% {
+        bottom: 75vh;
+    }
+}

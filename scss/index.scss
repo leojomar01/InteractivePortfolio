@@ -2,10 +2,13 @@
     padding: 0;
     margin: 0;
     font-family:'8-bit_arcade_inmedium';
+    box-sizing: border-box;
 
 }
 html{
     overflow-x: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 //prevent background scrolling when clicked
 .cover{
@@ -16,12 +19,19 @@ html{
     left: 0;
     z-index: 99;
 }
-
+.scrollLeft{
+    position: fixed;
+    top:1vh;
+    left:20vw;
+    font-size: 5rem;
+    z-index: 99;
+    border: 1px solid red;
+    font-family: 'Courier New', Courier, monospace;
+}
 .avatar{
     position: fixed;
     top:62vh;
     left: 20vw;
-    
     width: 20vh;
     height: 20vh;
     z-index: 999;
@@ -85,10 +95,12 @@ html{
 // scrollbar 
 .sticky-parent{
     height: 10000vh;
+    position: sticky;
+    top: 0;
 
 
     .dim{
-        min-width: 5000vw;
+        min-width: 3000vw;
         height: 120vh;
         }
 }
@@ -107,7 +119,7 @@ html{
         background-attachment: local;
 
         .content{
-            width: 2000vw;
+            width: 3000vw;
         }
     }
 
@@ -159,8 +171,6 @@ html{
             display: none;
         }
     }
-
-
     //Sky css
     .sky{
         background-size: auto 80vh;
